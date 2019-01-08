@@ -1,0 +1,16 @@
+{
+  "name" : "Ancient Codex",
+  "icon" : "embers:codex",
+  "category" : "ember_category",
+  "sortnum" : 1,
+  "pages": [
+    {
+      "type" : "text",
+      "text" : "The ancient codex will be your guide for all of embers. Read it  well. The Arcane Grimore will teach you some of the basics but not all of them. This codex should become craftable after slaying the ancient golem."
+    },
+    {
+      "type" : "crafting",
+      "recipe" : "embers:codex"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name" : "Introduction",
+  "icon" : "embers:shard_ember",
+  "category" : "ember_category",
+  "sortnum" : 0,
+  "pages" : [
+    {
+      "type" : "text",
+      "text" : "Welcome to Embers. The Magical Energy of the Dwarves will teach you the mystical ways to manipulate and mold metals and machinery. To get started it's very recommended to kill an ancient golem."
+    },
+    {
+      "type" : "entity",
+      "entity" : "embers:ancient_golem",
+      "text" : "The golem will shoot fire from it's eye watch out it can be quite painful."
+    }
+  ]
+}

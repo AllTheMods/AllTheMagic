@@ -1,4 +1,108 @@
 {
-  "entries": [],
-  "__comment": "Use the in-game commands to edit this file"
+  "entries": [
+    {
+      "item": "projecte:alchemical_chest|0",
+      "emc": 8987
+    },
+    {
+      "item": "projecte:collector_mk1|0",
+      "emc": 82953
+    },
+    {
+      "item": "projecte:collector_mk2|0",
+      "emc": 232969
+    },
+    {
+      "item": "projecte:collector_mk3|0",
+      "emc": 710665
+    },
+    {
+      "item": "projecte:condenser_mk1|0",
+      "emc": 42011
+    },
+    {
+      "item": "projecte:dm_pedestal|0",
+      "emc": 2564096
+    },
+    {
+      "item": "projecte:item.pe_philosophers_stone|0",
+      "emc": 1000000
+    },
+    {
+      "item": "projecte:item.pe_fuel|0",
+      "emc": 512
+    },
+    {
+      "item": "projecte:item.pe_fuel|1",
+      "emc": 2048
+    },
+    {
+      "item": "projecte:item.pe_fuel|2",
+      "emc": 8192
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|1",
+      "emc": 64
+    },
+    {
+      "item": "projecte:item.pe_covalence_dust|2",
+      "emc": 128
+    },
+    {
+      "item": "projecte:transmutation_table|0",
+      "emc": 10000000
+    },
+    {
+      "item": "mysticalagriculture:crafting|2",
+      "emc": 118996
+    },
+    {
+      "item": "minecraft:skull|*",
+      "emc": 0
+    },
+    {
+      "item": "tconstruct:ingots|3",
+      "emc": 1098
+    },
+    {
+      "item": "thebetweenlands:octine_ingot|0",
+      "emc": 2048
+    },
+    {
+      "item": "contenttweaker:steel_ingot|0",
+      "emc": 1280
+    },
+    {
+      "item": "thebetweenlands:items_misc|11",
+      "emc": 2048
+    },
+    {
+      "item": "botania:manaresource|5",
+      "emc": 120000
+    },
+    {
+      "item": "rustic:ironberries|0",
+      "emc": 14
+    },
+    {
+      "item": "rustic:grapes|0",
+      "emc": 14
+    },
+    {
+      "item": "rustic:chili_pepper|0",
+      "emc": 64
+    },
+    {
+      "item": "rustic:tomato|0",
+      "emc": 64
+    },
+    {
+      "item": "rustic:wildberries|0",
+      "emc": 14
+    },
+    {
+      "item": "rustic:olives|0",
+      "emc": 14
+    }
+  ]
 }

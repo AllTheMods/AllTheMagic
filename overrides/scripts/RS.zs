@@ -95,27 +95,27 @@ recipes.addShaped(<refinedstorage:fluid_storage_part:3>,
 #Cut Processors
 recipes.remove(<refinedstorage:processor>);//Basic
 recipes.addShapeless(<refinedstorage:processor> ,
-[<refinedstorage:cutting_tool> , <ore:ingotSteel> , <refinedstorage:processor:6>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool> , <ore:ingotSteel> , <ore:itemSilicon>, <wizardry:devil_dust>]);
 
 for ingot in mechIngot{
 recipes.remove(<refinedstorage:processor:1>);//Improved
 recipes.addShapeless(<refinedstorage:processor:1> ,
-[<refinedstorage:cutting_tool> , ingot, <refinedstorage:processor:6>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool> , ingot, <ore:itemSilicon>, <wizardry:devil_dust>]);
 }
 
 recipes.remove(<refinedstorage:processor:2>);//Advanced
 recipes.addShapeless(<refinedstorage:processor:2> ,
-[<refinedstorage:cutting_tool> , <ore:manaDiamond>, <refinedstorage:processor:6>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool> , <ore:manaDiamond>, <ore:itemSilicon>, <wizardry:devil_dust>]);
 
 #Processed Processors
 furnace.remove(<refinedstorage:processor:3>);//Basic
-Stamper.add(<refinedstorage:processor:3> , <liquid:alchemical_redstone>*144, <refinedstorage:processor:6>, <refinedstorage:processor>);
+Stamper.add(<refinedstorage:processor:3> , <liquid:alchemical_redstone>*144, <ore:itemSilicon>, <refinedstorage:processor>);
 
 furnace.remove(<refinedstorage:processor:4>);//Improved
-Stamper.add(<refinedstorage:processor:4> , <liquid:alchemical_redstone>*144, <refinedstorage:processor:6>, <refinedstorage:processor:1>);
+Stamper.add(<refinedstorage:processor:4> , <liquid:alchemical_redstone>*144, <ore:itemSilicon>, <refinedstorage:processor:1>);
 
 furnace.remove(<refinedstorage:processor:5>);//Advanced
-Stamper.add(<refinedstorage:processor:5>, <liquid:alchemical_redstone>*144, <refinedstorage:processor:6>, <refinedstorage:processor:2>);
+Stamper.add(<refinedstorage:processor:5>, <liquid:alchemical_redstone>*144, <ore:itemSilicon>, <refinedstorage:processor:2>);
 
 #Machines
 recipes.remove(<refinedstorage:disk_drive>);//Disk Drive

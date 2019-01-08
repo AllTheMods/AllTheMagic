@@ -1,0 +1,535 @@
+{
+  "crops": [
+    {
+      "initialBlock": {
+        "blockName": "minecraft:wheat",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock": {
+        "blockName": "minecraft:carrots",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock": {
+        "blockName": "minecraft:potatoes",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock": {
+        "blockName": "minecraft:beetroots",
+        "meta": 3
+      }
+    },
+    {
+      "initialBlock": {
+        "blockName": "minecraft:nether_wart",
+        "meta": 3
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:tier1_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:tier2_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:tier3_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:tier4_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:tier5_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagradditions:tier6_inferium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:stone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:dirt_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:nature_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:wood_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:water_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:ice_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:fire_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:dye_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:nether_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:coal_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:iron_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:nether_quartz_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:glowstone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:redstone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:obsidian_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:gold_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:lapis_lazuli_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:end_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:experience_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:diamond_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:emerald_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:zombie_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:pig_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:chicken_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:cow_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:sheep_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:slime_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:skeleton_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:creeper_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:spider_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:rabbit_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:guardian_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:blaze_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:ghast_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:enderman_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:wither_skeleton_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:nether_star_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:dragon_egg_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:silicon_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:sulfur_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:brass_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:amber_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:aluminum_brass_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:knightslime_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:ardite_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:cobalt_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:manyullyn_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:mystical_flower_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:manasteel_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:elementium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:terrasteel_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:quicksilver_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:thaumium_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:void_metal_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:dawnstone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:marble_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:limestone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:basalt_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:steeleaf_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:ironwood_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:knightmetal_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:fiery_ingot_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:slimy_bone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:syrmorite_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:octine_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:valonite_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:aquamarine_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:starmetal_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:rock_crystal_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:ender_biotite_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:slate_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:dark_gem_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:sky_stone_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:certus_quartz_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:fluix_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:quartz_enriched_iron_crop",
+        "meta": 7
+      }
+    },
+    {
+      "initialBlock" : {
+        "blockName": "mysticalagriculture:iron_crop",
+        "meta": 7
+      }
+    }
+  ],
+  "exhaustionPerHarvest": 0.005,
+  "additionalLogging": false,
+  "checkForCrops": false
+}

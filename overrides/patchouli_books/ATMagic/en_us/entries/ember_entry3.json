@@ -1,0 +1,12 @@
+{
+  "name" : "Collecting Embers",
+  "icon" : "embers:ember_bore",
+  "category" : "ember_category",
+  "sortnum" : 3,
+  "pages" : [
+    {
+      "type" : "text",
+      "text" : "An ember bore can be used to obtain embers. Place an ember bore on bedrock. Using the top of the bore, place a machine accessor to make access easier. Fuel needs to be inserted into the bore via a hopper or an item pipe being piped in."
+    }
+  ]
+}

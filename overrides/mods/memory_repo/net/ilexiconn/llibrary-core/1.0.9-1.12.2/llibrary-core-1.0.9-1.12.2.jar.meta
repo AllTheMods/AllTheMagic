@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Maven-Artifact: net.ilexiconn:llibrary-core:1.0.9-1.12.2
+FMLCorePlugin: net.ilexiconn.llibrary.server.core.plugin.LLibraryPlugi
+ n
+Timestamp: 1544035598358
+

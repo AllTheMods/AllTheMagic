@@ -156,7 +156,7 @@ recipes.addShaped(<appliedenergistics2:chest>,
 recipes.remove(<appliedenergistics2:controller>);//ME Controller
 recipes.addShaped(<appliedenergistics2:controller>,
 [[<thaumcraft:stone_arcane>, <ore:crystalFluix>, <thaumcraft:stone_arcane>],
-[<thaumcraft:stone_arcane>, <appliedenergistics2:material:24>, <ore:crystalFluix>],
+[<ore:crystalFluix>, <appliedenergistics2:material:24>, <ore:crystalFluix>],
 [<thaumcraft:stone_arcane>, <ore:crystalFluix>, <thaumcraft:stone_arcane>]]);
 
 #Terminals

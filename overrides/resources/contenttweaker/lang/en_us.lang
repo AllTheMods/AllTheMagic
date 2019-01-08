@@ -1,0 +1,5 @@
+tile.contenttweaker.steel_block.name=Steel Block
+tile.contenttweaker.starmetal_block.name=Starmetal Block
+fluid.molten_steel=Molten Steel
+fluid.liquid_coal=Liquifaced Coal
+item.contenttweaker.steel_ingot.name=Steel Ingot
