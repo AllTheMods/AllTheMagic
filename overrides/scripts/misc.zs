@@ -26,6 +26,12 @@ recipes.addShaped(<mist:portal_base:3>,[ //Weathered Stone
 [<minecraft:vine>]
 ]);
 
+recipes.removeByRecipeName("mist:respirator_single");//Respirator
+recipes.addShaped(<mist:respirator_single> ,
+  [[<minecraft:string>, null, <minecraft:string>],
+  [<ore:leather>, null, <ore:leather>],
+  [<ore:ingotSilver>, <ore:leather>, null]]);
+
 #SoulShards
 recipes.remove(<soulshardsrespawn:materials:1>);
 Crucible.registerRecipe("corruptEssence", "", <soulshardsrespawn:materials:1>, <ore:dustVile>, [<aspect:perditio>*20, <aspect:spiritus>*25, <aspect:vitium>*5]);

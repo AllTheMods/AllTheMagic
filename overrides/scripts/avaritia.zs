@@ -31,7 +31,7 @@ val mystPage as string[IItemStack][IOreDictEntry] = {
 <ore:blockKnightslime> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_knightslime_0"}) : "atm:pageKnightslime"},
 <ore:blockOctine> : {<mystcraft:page>.withTag({symbol: "pewter:modmat_molten_octine_0"}) : "atm:pageOctine"},
 <ore:blockSyrmorite> : {<mystcraft:page>.withTag({symbol: "pewter:modmat_molten_syrmorite_0"}) : "atm:pageSyrmorite"},
-<ore:blokCopper> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_copper_0"}) : "atm:pageCopper"},
+<ore:blockCopper> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_copper_0"}) : "atm:pageCopper"},
 <ore:blockGold> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_gold_0"}) : "atm:pageGold"},
 <ore:blockElectrum> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_electrum_0"}) : "atm:pageElectrum"},
 <ore:blockAluminum> : {<mystcraft:page>.withTag({symbol: "tconstruct:modmat_molten_aluminum_0"}) : "atm:pageAluminum"},

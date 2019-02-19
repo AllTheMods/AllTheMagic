@@ -37,11 +37,12 @@ evilcraft:breaking
 evilcraft:life_stealing
 evilcraft:poison_tip
 evilcraft:vengeance
-felling:felling
+oeintegration:oreexcavation
 rockcandy:auto_feed
 soulshardsrespawn:soul_stealer
 tombstone:shadow_step
 tombstone:soulbound
-veining:veining
 astralsorcery:enchantment.as.nightvision
 astralsorcery:enchantment.as.smelting
+naturalpledge:heavy
+naturalpledge:light

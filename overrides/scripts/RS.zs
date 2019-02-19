@@ -32,7 +32,7 @@ recipes.addShaped(<refinedstorage:quartz_enriched_iron> *4,
 recipes.remove(<refinedstorage:machine_casing>);//Machine Casing
 recipes.addShaped(<refinedstorage:machine_casing>,
 [[<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>],
-[<refinedstorage:quartz_enriched_iron>, <thaumcraft:stone_arcane>, <refinedstorage:quartz_enriched_iron>],
+[<refinedstorage:quartz_enriched_iron>, <botania:corporeaspark:1>, <refinedstorage:quartz_enriched_iron>],
 [<refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]]);
 
 #Storage Parts
@@ -95,17 +95,17 @@ recipes.addShaped(<refinedstorage:fluid_storage_part:3>,
 #Cut Processors
 recipes.remove(<refinedstorage:processor>);//Basic
 recipes.addShapeless(<refinedstorage:processor> ,
-[<refinedstorage:cutting_tool> , <ore:ingotSteel> , <ore:itemSilicon>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool>.anyDamage() , <ore:ingotSteel> , <ore:itemSilicon>, <wizardry:devil_dust>]);
 
 for ingot in mechIngot{
 recipes.remove(<refinedstorage:processor:1>);//Improved
 recipes.addShapeless(<refinedstorage:processor:1> ,
-[<refinedstorage:cutting_tool> , ingot, <ore:itemSilicon>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool>.anyDamage() , ingot, <ore:itemSilicon>, <wizardry:devil_dust>]);
 }
 
 recipes.remove(<refinedstorage:processor:2>);//Advanced
 recipes.addShapeless(<refinedstorage:processor:2> ,
-[<refinedstorage:cutting_tool> , <ore:manaDiamond>, <ore:itemSilicon>, <wizardry:devil_dust>]);
+[<refinedstorage:cutting_tool>.anyDamage() , <ore:manaDiamond>, <ore:itemSilicon>, <wizardry:devil_dust>]);
 
 #Processed Processors
 furnace.remove(<refinedstorage:processor:3>);//Basic
@@ -118,6 +118,12 @@ furnace.remove(<refinedstorage:processor:5>);//Advanced
 Stamper.add(<refinedstorage:processor:5>, <liquid:alchemical_redstone>*144, <ore:itemSilicon>, <refinedstorage:processor:2>);
 
 #Machines
+recipes.remove(<refinedstorage:controller>);//Controller
+recipes.addShaped(<refinedstorage:controller>,
+[[<refinedstorage:quartz_enriched_iron>, <botania:corporeaindex>, <refinedstorage:quartz_enriched_iron>],
+[<ore:itemSilicon>, <refinedstorage:machine_casing>, <ore:itemSilicon>],
+[<refinedstorage:quartz_enriched_iron>, <ore:itemSilicon>, <refinedstorage:quartz_enriched_iron>]]);
+
 recipes.remove(<refinedstorage:disk_drive>);//Disk Drive
 recipes.addShaped(<refinedstorage:disk_drive>,
 [[<refinedstorage:quartz_enriched_iron>, <ore:chestObsidian>, <refinedstorage:quartz_enriched_iron>],
@@ -138,6 +144,17 @@ recipes.remove(<refinedstorage:grid:3>);//Fluid Grid
 recipes.addShapeless(<refinedstorage:grid:3>,
 [<refinedstorage:grid>, <refinedstorage:processor:5>, <botania:openbucket>]);
 
+#Wireless Grid
+recipes.remove(<refinedstorage:wireless_grid>);//Wireless Grid
+recipes.addShaped(<refinedstorage:wireless_grid>,
+[[<refinedstorage:quartz_enriched_iron>, <incorporeal:corporea_soul_core>, <refinedstorage:quartz_enriched_iron>],
+[<refinedstorage:quartz_enriched_iron>, <refinedstorage:grid>, <refinedstorage:quartz_enriched_iron>],
+[<refinedstorage:quartz_enriched_iron>, <refinedstorage:processor:5>, <refinedstorage:quartz_enriched_iron>]]);
+
+recipes.remove(<refinedstorageaddons:wireless_crafting_grid>);//Wireless Crafting Grid
+recipes.addShapeless(<refinedstorageaddons:wireless_crafting_grid>,
+[<refinedstorage:wireless_grid>, <refinedstorage:wireless_transmitter>, <refinedstorage:grid:1>]);
+
 #RS Items
 recipes.remove(<refinedstorage:pattern>);//Pattern
 recipes.addShaped(<refinedstorage:pattern>,
@@ -154,7 +171,21 @@ recipes.addShaped(<refinedstorage:storage_housing>,
 recipes.remove(<refinedstorage:cable>);//Cables
 recipes.addShaped(<refinedstorage:cable>*12,
 [[<refinedstorage:quartz_enriched_iron> , <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>],
-[<botania:managlass>, <wizardry:devil_dust>, <botania:managlass>],
+[<botania:managlass>, <botania:corporeaspark>, <botania:managlass>],
 [<refinedstorage:quartz_enriched_iron> , <refinedstorage:quartz_enriched_iron>, <refinedstorage:quartz_enriched_iron>]]);
+
+recipes.remove(<refinedstorage:core>);//Construction Core
+recipes.addShapeless(<refinedstorage:core>,
+[<refinedstorage:processor:3>, <incorporeal:corporea_solidifier>]);
+
+recipes.remove(<refinedstorage:core:1>);//Destruction Core
+recipes.addShapeless(<refinedstorage:core:1>,
+[<refinedstorage:processor:3>, <incorporeal:corporea_retainer_decrementer>]);
+
+recipes.remove(<refinedstorage:external_storage>);//External Storage
+recipes.addShaped(<refinedstorage:external_storage>,
+[[<refinedstorage:core>, <refinedstorage:quartz_enriched_iron>, <refinedstorage:core:1>],
+[<botania:corporeaspark:1>, <refinedstorage:cable>, <botania:corporeaspark:1>],
+[<refinedstorage:quartz_enriched_iron>, <refinedstorage:processor:4>, <refinedstorage:quartz_enriched_iron>]]);
 
 print("Intialized 'Refined Storage'");

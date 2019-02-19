@@ -46,4 +46,6 @@ quark:long_resistance
 quark:strong_resistance
 quark:danger_sight
 quark:long_danger_sight
+mowziesmobs:poison_resist
+mowziesmobs:long_poison_resist
 voidcraft:voidimmunity
