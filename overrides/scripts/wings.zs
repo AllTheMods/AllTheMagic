@@ -7,8 +7,7 @@ print("Wings Intializing...");
 var hiddenItems as IItemStack[] = [
 <wings:fairy_dust_ore>,
 <wings:amethyst_ore>,
-<wings:fairy_dust>,
-<wings:amethyst>
+<wings:fairy_dust>
 ];
 
 for item in hiddenItems {
@@ -69,4 +68,6 @@ recipes.addShaped(<wings:dragon_wings>,
 [<ore:ingotNiobium>, <wizardry:fairy_dust>, <ore:ingotNiobium>],
 [<ore:ingotNiobium>, null, <ore:ingotNiobium>]]);
 
+#Amethyst Crafting Recipe
+mods.astralsorcery.StarlightInfusion.addInfusion(<evilcraft:dark_gem>, <wings:amethyst>, false, 0.4, 200);
 print("Wings Intialized");

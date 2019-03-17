@@ -58,8 +58,23 @@ Inscriber.addRecipe(<appliedenergistics2:material:23>, <wizardry:devil_dust>, fa
 recipes.remove(<appliedenergistics2:part:140>);//Quartz Fiber
 recipes.addShaped(<appliedenergistics2:part:140>*3,
 [[<botania:managlass>, <botania:managlass>, <botania:managlass>],
-[<ore:dustQuartz>, <ore:dustQuartz>,<ore:dustQuartz>],
+[<ore:dustQuartz>, <botania:corporeaspark> ,<ore:dustQuartz>],
 [<botania:managlass>, <botania:managlass>, <botania:managlass>]]);
+
+recipes.remove(<appliedenergistics2:material:41>);//Wireless Reciever
+recipes.addShaped(<appliedenergistics2:material:41>,
+[[null, <appliedenergistics2:material:9>, null],
+[<ore:ingotIron>, <appliedenergistics2:part:140>, <ore:ingotIron>],
+[null, <incorporeal:corporea_soul_core>, null]]);
+
+#Cores
+recipes.remove(<appliedenergistics2:material:43>);//Formation Core
+recipes.addShapeless(<appliedenergistics2:material:43>*2,
+[<incorporeal:corporea_solidifier>, <ore:dustFluix>, <appliedenergistics2:material:22>]);
+
+recipes.remove(<appliedenergistics2:material:44>);//Annihilation Core
+recipes.addShapeless(<appliedenergistics2:material:44>*2,
+[<incorporeal:corporea_retainer_decrementer> , <ore:dustFluix>, <appliedenergistics2:material:22>]);
 
 
 recipes.remove(<appliedenergistics2:part:180>);//Illuminated Panel
@@ -68,7 +83,7 @@ recipes.addShapeless(<appliedenergistics2:part:180>,
 
 recipes.addShaped(<appliedenergistics2:part:180>*3,
 [[null, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>],
-[<ore:ingotSteel>, <wizardry:devil_dust>, <appliedenergistics2:quartz_glass>],
+[<ore:ingotSteel>, <botania:corporeaspark:1>, <appliedenergistics2:quartz_glass>],
 [null, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>]]);
 
 recipes.remove(<appliedenergistics2:material:52>);//Blank Pattern
@@ -156,7 +171,7 @@ recipes.addShaped(<appliedenergistics2:chest>,
 recipes.remove(<appliedenergistics2:controller>);//ME Controller
 recipes.addShaped(<appliedenergistics2:controller>,
 [[<thaumcraft:stone_arcane>, <ore:crystalFluix>, <thaumcraft:stone_arcane>],
-[<ore:crystalFluix>, <appliedenergistics2:material:24>, <ore:crystalFluix>],
+[<ore:crystalFluix>, <botania:corporeaindex>, <ore:crystalFluix>],
 [<thaumcraft:stone_arcane>, <ore:crystalFluix>, <thaumcraft:stone_arcane>]]);
 
 #Terminals

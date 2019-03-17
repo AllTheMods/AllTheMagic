@@ -8,10 +8,10 @@ recipes.remove(<projecte:item.pe_philosophers_stone>);//Philosophers Stone
 Infusion.registerRecipe("Philosophers Stone", "", <projecte:item.pe_philosophers_stone>, 80,
 [<aspect:cognitio>*100, <aspect:spiritus>*80, <aspect:potentia>*200, <aspect:victus>*50, <aspect:tenebrae>*40, <aspect:permutatio>*70, <aspect:mortuus>*20, <aspect:praecantatio>*100],
 <thaumcraft:primordial_pearl>,
-[<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.horologium"}}), <wizardry:mana_battery>, <ore:ingotEbonyPsi>,
-<bloodmagic:item_demon_crystal:3>, <evilcraft:piercing_vengeance_focus>, <rootsclassic:runicfocus>,
-<mystcraft:blockcrystal>, <voidcraft:voidstar>, <ore:gaiIngot>,
-<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}), <embers:wildfire_core>, <xreliquary:alkahestry_tome>, <twilightforest:trophy:3>, <thebetweenlands:elixir:22>.withTag({elixirData: {duration: 1200, strength: 4}}), <dragonmounts:enchant_dragonscales>]);
+[<astralsorcery:itemcape>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.horologium"}}), <wizardry:halo_real>, <ore:ingotEbonyPsi>,
+<bloodmagic:demon_crystal:3>, <evilcraft:piercing_vengeance_focus>, <rootsclassic:runicfocus>,
+<mystcraft:blockcrystal>, <voidcraft:voidstar>, <naturesaura:eye_improved>,
+<rustic:elixir>.withTag({ElixirEffects: [{Effect: "rustic:blazing_trail", Duration: 9600, Amplifier: 0}]}), <embers:wildfire_core>, <xreliquary:alkahestry_tome>, <twilightforest:trophy:3>, <thebetweenlands:tarminion>, <dragonmounts:enchant_dragonscales>, <avaritiatweaks:gaia_block>]);
 
 recipes.remove(<projecte:item.pe_covalence_dust>);//Low Covalence Dust
 recipes.addShapeless(<projecte:item.pe_covalence_dust>*40,

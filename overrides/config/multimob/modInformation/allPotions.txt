@@ -72,6 +72,10 @@ bloodmagic:bounce
 bloodmagic:cling
 bloodmagic:sacrificial_lamb
 bloodmagic:flight
+bloodmagic:grounded
+bloodmagic:suspended
+bloodmagic:heavy_heart
+bloodmagic:feathered
 bloodarsenal:bleeding
 conarm:superhotpotion
 ebwizardry:frost
@@ -93,9 +97,11 @@ extrabotany:reflect
 extrabotany:constantpain
 extrabotany:divinejustice
 extrabotany:blacksabbath
+extrabotany:bloodtemptation
 mowziesmobs:suns_blessing
 mowziesmobs:geomancy
 mowziesmobs:frozen
+mowziesmobs:poison_resist
 mysticalwildlife:shocked
 xreliquary:flight_potion
 xreliquary:pacification_potion
@@ -125,6 +131,14 @@ shotgunsandglitter:tranquilizer
 shotgunsandglitter:frost
 shotgunsandglitter:flash
 shotgunsandglitter:disco
+naturalpledge:faithlessness
+naturalpledge:drab
+naturalpledge:rooted
+naturalpledge:overcharged
+naturalpledge:featherweight
+naturalpledge:immortality
+naturalpledge:everburn
+naturalpledge:trap_seer
 wizardry:nullify_gravity
 wizardry:steroid
 wizardry:phase

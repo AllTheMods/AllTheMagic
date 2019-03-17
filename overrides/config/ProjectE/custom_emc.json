@@ -103,6 +103,14 @@
     {
       "item": "rustic:olives|0",
       "emc": 14
+    },
+    {
+      "item": "projecte:relay_mk1|0",
+      "emc": 74177
+    },
+    {
+      "item": "botania:specialflower",
+      "emc": 0
     }
   ]
 }
