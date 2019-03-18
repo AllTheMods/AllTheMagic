@@ -10,7 +10,7 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "ATM-All the Magic",
+  "name": "All the Mods All the Magic",
   "version": "1.5",
   "author": "atmteam",
   "projectID": 310346,
@@ -531,11 +531,6 @@
       "required": true
     },
     {
-      "projectID": 278494,
-      "fileID": 2638380,
-      "required": true
-    },
-    {
       "projectID": 229876,
       "fileID": 2483393,
       "required": true
@@ -863,6 +858,16 @@
     {
       "projectID": 314904,
       "fileID": 2684368,
+      "required": true
+    },
+    {
+      "projectID": 237102,
+      "fileID": 2687621,
+      "required": true
+    },
+    {
+      "projectID": 278494,
+      "fileID": 2638380,
       "required": true
     }
   ],
