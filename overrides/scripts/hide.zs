@@ -6,14 +6,14 @@ print("Initializing 'Hide JEI'...");
 
 #Variables
 var hiddenItems as IItemStack[] = [
-<appliedenergistics2:facade>,
-<refinedstorage:cover>,
-<refinedstorage:hollow_cover>
+	<appliedenergistics2:facade>,
+	<refinedstorage:cover>,
+	<refinedstorage:hollow_cover>
 ];
 
 #Hide
 for item in hiddenItems {
-JEI.hide(item);
+	JEI.hide(item);
 }
 
 JEI.removeAndHide(<singularities:compressor>);
