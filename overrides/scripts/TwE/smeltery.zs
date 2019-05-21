@@ -28,10 +28,11 @@ var smelteryParts as IItemStack[] = [
 <tconstruct:seared_stairs_road>,
 <tconstruct:seared_stairs_tile>,
 <tconstruct:seared_stairs_creeper>,
-<tconstruct:soil>,
-<tconstruct:materials:0>
+<tconstruct:soil>
 ];
 
 for part in smelteryParts {
 JEI.removeAndHide(part);
 }
+
+furnace.remove(<tconstruct:materials:0>);
