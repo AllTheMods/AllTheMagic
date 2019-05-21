@@ -163,3 +163,5 @@ recipes.addShaped(<contenttweaker:starmetal_block>,
 
 recipes.addShapeless(<astralsorcery:itemcraftingcomponent:1>*9,
 [<ore:blockAstralStarmetal>]);
+
+mods.jei.JEI.removeAndHide(<naturalpledge:funnel>);
