@@ -7,7 +7,7 @@ import mods.embers.Stamper;
 
 // SOURCE: https://gist.github.com/terrapin47/6564d700656b09f0e8e8b1e252efc047
 
-// REGISTERED MATERIALS
+//====== Registered Materials ======
 
 // Names of all registered tcon materials that can be made into tool parts,
 // excluding bow string, arrow shaft, bolt core, and fletching.  Any valid added materials will be added to the
@@ -188,7 +188,9 @@ val registeredLiquidTypesMap as string[][ILiquidStack] = {
     <liquid:fierymetal> : ["tool"],
     <liquid:knightmetal> : ["tool"]
     };
-// TOOLS
+
+//====== Tools ======
+
 var tconInitMaterial = tconPartMaterials[0];
 
 var partPickHead = <tconstruct:pick_head>.withTag({Material: tconInitMaterial});
@@ -246,7 +248,8 @@ for i in 1 .. tconPartMaterials.length {
 	partArrowHead |= <tconstruct:arrow_head>.withTag({Material: material});
 }
 
-// ARMOR
+//====== Armor ======
+
 var conarmInitMaterial = conarmPartMaterials[0];
 
 var partHelmetCore = <conarm:helmet_core>.withTag({Material: conarmInitMaterial});
@@ -269,7 +272,8 @@ for i in 1 .. conarmPartMaterials.length {
 }
 
 
-// STRINGS
+//====== Strings ======
+
 var partBowString = <tconstruct:bow_string>.withTag({Material:bowstringPartMaterials[0]});
 
 for i in 1 .. bowstringPartMaterials.length {
@@ -277,7 +281,8 @@ for i in 1 .. bowstringPartMaterials.length {
 }
 
 
-// SHAFTS
+//====== Shafts ======
+
 var partArrowShaft = <tconstruct:arrow_shaft>.withTag({Material:arrowShaftMaterials[0]});
 
 for i in 1 .. arrowShaftMaterials.length {
@@ -285,7 +290,8 @@ for i in 1 .. arrowShaftMaterials.length {
 }
 
 
-// FLETCHINGS
+//====== Fletchings ======
+
 var partFletching = <tconstruct:fletching>.withTag({Material:fletchingMaterials[0]});
 
 for i in 1 .. fletchingMaterials.length {
@@ -294,6 +300,7 @@ for i in 1 .. fletchingMaterials.length {
 
 
 // Mapping for each set of parts and their accompanying cast
+
 var partStamps as IItemStack[IIngredient] = {};
 partStamps[partPickHead] = <emberstic:stamp_pick_head>;
 partStamps[partToolRod] = <emberstic:stamp_tool_rod>;
@@ -339,7 +346,7 @@ for part, stamp in partStamps {
 }
 
 
-// PART MATERIAL COMPAT
+//====== Part Material Compat ======
 
 // Map for the amount of liquid each part type takes/melts into
 static partLiquidMap as int[IItemStack] = {

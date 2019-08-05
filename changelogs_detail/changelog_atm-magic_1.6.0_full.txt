@@ -1,0 +1,3325 @@
+All the Mods All the Magic 1.5 to All the Mods All the Magic 1.6.0
+
+Added 5 files:
+	- Arcane Archives
+	- AttributeFix
+	- Bad Wither No Cookie - Reloaded
+	- Bewitchment
+	- TBone
+
+Updated 92 files:
+	 Forge (went from Forge 14.23.5.2821 to Forge 14.23.5.2838)
+
+	 The Betweenlands (went from The Betweenlands v3.4.6 to The Betweenlands v3.4.10):
+		The Betweenlands v3.4.10:
+			Fixes:
+
+			- Fixed Repeller not repelling fireballs and pyrad flames
+
+			- Fixed some datawatcher errors that may have caused some mod incompatibilities
+
+			- Fixed portals not respecting world borders
+
+			- Fixed Rings sometimes not consuming XP correctly
+
+			- Fixed a rare crash caused by Wights' Volatile Souls
+
+			- Fixed Dreadful Peat Mummy being able to attack while dying
+
+			- Fixed a rare genlayer crash
+
+			- Fixed an incompatibility with OptiFine's "Render Quality" option, causing the screen to be halved (more or less)
+
+			- Fixed Lurker Skin Raft dupe
+
+			- Fixed Sulfur Furnace to consume lava buckets and similar items that don't usually get consumed
+		The Betweenlands v3.4.9:
+			Fixes:
+
+			- Fixed Living Weedwood Shield causing a rendering bug in inventory
+
+			- Fixed Weedwood Chest item renderer
+
+			- Fixed an incompatbility with Dynamic Stealth. Thanks Laike-Endaril!
+		The Betweenlands v3.4.8:
+			Fixes:
+
+			- Fixed crash on dedicated server, not letting players connect
+		The Betweenlands v3.4.7:
+			Additions/Changes:
+
+			- Block model textures are now packed, significantly reducing the space used on the texture atlas. May slightly improve performance
+
+			on graphics cards that are slow at updating textures for texture animations.
+
+			- Tamed Spirit Tree Faces now no longer instantly despawn when collided with another entity or being in an invalid position, instead they drop to the ground and teleport to nearby Spirit Tree Logs if available.
+
+			- Decay now uses an [Attribute Modifier](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fminecraft.gamepedia.com%252fAttribute) for the health reduction, improving compatibility with other mods that change the max health
+
+			- Several small optimizations, especially regarding capability tick time
+
+			- Added option to enable food sickness in the overworld
+
+			- Added options to change decay bar position on HUD
+
+			- Added option for percentual decay health decrease
+
+			Fixes:
+
+			- Fixed Syrmorite Buckets no longer stackable after having removed Solid Rubber from them
+
+			- Fixed Rotten Food and Tainted Potions sometimes displaying item names incorrectly
+
+			- Fixed a bug with XP consumption from Rings and Bone Wayfinder
+
+	AE2 Wireless Terminal Library (went from AE2WTLib-1.12.2-1.0.6.jar to AE2WTLib-1.12.2-1.0.30.jar):
+		AE2WTLib-1.12.2-1.0.30.jar:
+			Fixed AIOOB bug
+		AE2WTLib-1.12.2-1.0.29.jar:
+			Fixed bug when trying to open a gui with a cheated in WUT which contains no stored terminals
+		AE2WTLib-1.12.2-1.0.28.jar:
+			Fixed client crash
+		AE2WTLib-1.12.2-1.0.27.jar:
+			Implemented a functional API (still needs work)
+
+	Applied Energistics 2 (went from appliedenergistics2-rv6-stable-6.jar to appliedenergistics2-rv6-stable-7.jar):
+		appliedenergistics2-rv6-stable-7.jar:
+			Fixes #3886: Initialise sleeping import bus in pulse mode. (#3887) - yueh
+
+			Fixes #3899: Put fluid interface into configured mode when needed. (#3903) - yueh
+
+			Fixes #3901: Ensure fluid terminal respects reported stacksizes. (#3902) - yueh
+
+			Fixes #3911: Incorrectly used string format. (#4007) - yueh
+
+			Fixes #3925: Incorrect API JavaDoc (#4008) `IGridBlock#getMachineRepresentation()` must be non null. - yueh
+
+			Fixes #4005: Persist cell after cleanup. (#4009) - yueh
+
+			Fixes #4062: Rounding error due to float precision. (#4064) - yueh
+
+			Fixes #4089: Render cable core on straight lines of different types. (#4103) - yueh
+
+			Fixes #4090 Portable cell incorrect empty itemstack handling (#4093) - yueh
+
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.11.jar to AstralSorcery-1.12.2-1.10.19.jar):
+		AstralSorcery-1.12.2-1.10.19.jar:
+			Changes:
+
+			- Make spectral tools not collide with the player
+
+			Fixes:
+
+			- Only create structure matchers for relevant relays
+
+			- Fix perk crashes with dynamism gems
+
+			- Fix visual glitch with translucent blocks
+
+			- Fix recipes being unable to be crafted if the item to be crafted on was manipulated by other means
+
+			- Fix cooldown not being applied for phoenix perk
+
+			- Check for chunks being loaded when running a block search
+		AstralSorcery-1.12.2-1.10.18.jar:
+			Additions:
+
+			- Added debug logging config option for tree beacon block capturing and processing
+
+			Fixes:
+
+			- Don't create a dedicated fake player for each chain mining operation
+
+			- Elytra flight now properly grants exp
+
+			- Potion duration perk does no longer extend existing potion effects
+
+			- Remove obsolete debug print
+
+			- Fix phoenix blessing perk not triggering correctly
+
+			- World no longer being accessed off the main thread on packet
+		AstralSorcery-1.12.2-1.10.17.jar:
+			Fixes:
+
+			- AstralSorcery Research manager crashing without crafttweaker installed.
+		AstralSorcery-1.12.2-1.10.16.jar:
+			Added moar patreon stuff
+
+			Fixes:
+
+			- Fixed playerdata failed on being saved during server shutdown
+
+			- Fixed worldreference being kept, keeping the an empty world in ram for no reason
+
+			- Fixed night vision enchantment applicable to any armor piece
+		AstralSorcery-1.12.2-1.10.15.jar:
+			Added more patreon stuff and things :D
+
+			Additions:
+
+			- Added logging to structure matching to allow for more extensive debugging
+
+			- "Requires starlight shining on it" and normal AS craftingtable recipes are now visible in JEI (Thanks @ Hubry)
+
+			Changes:
+
+			- Make retrogen trigger on surrounding chunks and based on their information rather than building a retrogen queue
+
+			- Make status-effect rituals run if starlight is present rather than having at least enough starlight for 1 full cycle
+		AstralSorcery-1.12.2-1.10.14.jar:
+			Fixes:
+
+			- Added missing AT entry
+
+			- Adjusted handling for sextant target requests
+
+			- Fixed perk cleanup being done after player already got cleared on clientside
+		AstralSorcery-1.12.2-1.10.13.jar:
+			IMPORTANT NOTICE: This version includes a new command: "/as migrate-data" - This converts some old, imperformant data format to a new format. For larger worlds, please make sure you BACKUP your world before doing that! It might take a long time if your world is larger keep that in mind!
+
+			Additions:
+
+			- Yet again MOAR patreon effects! :P
+
+			- Command: "/as migrate-data" - Check the notice.
+
+			- Logging for perk-related behavior
+
+			Changes:
+
+			- Perks around the "Consistent Luck" and "Spectral Wings" perk are at least a bit useful now as their prior negative effects could be avoided with perk seals anyway
+
+			- A better multiblock highlighting for sextants! Actually points out errors and makes for a better building-guide!
+
+			Fixes:
+
+			- Tome no longer being given out infinitely
+
+			- Item comparisons messing up crafting checks
+
+			- Chalice interactions not working on the highest-Z-level-chunk
+
+			- Misleading JEI error message from AS removed
+
+			- Prevent structure spawning on non-opaque ground
+
+			- Lightwell's itemhandler not being visible to pipes trying to interact with it
+
+			- Fix crash with step assist key perk
+
+			- Fix stardust was not accepted as repair material for mantles
+
+			- Fix inventory misbehavior with ritual pedestal
+		AstralSorcery-1.12.2-1.10.12.jar:
+			Changed patreon integration to automatically query updated patreon information.
+
+			Additions:
+
+			- Add sky-check ignoring gamerule (astralSorceryIgnoreSkyCheck)
+
+			Fixes:
+			- Fixed cave illuminator spawning lights on higher y-level than itself
+			- Catching JVM errors during blockstate deserialization (no more Exu2 crashes...)
+
+			- Fix crashes when using a trait-recipe without additional outer items
+
+			- Make sure gateway teleporations actually point towards another gateway
+
+			- Change research lookup to use fallback always-false progression instead of missing player data
+
+			- Fix dangling recipes from JEI reload are not removed
+
+			- Fix itemphysics rendering being broken again (credit to CreativeMD)
+
+			- Fix effectAmplifier for ritual effects not adding additional cycles to effect executions
+
+			- Fix crystal pickaxe not being able to mine redstone ore with proper speed
+
+	AutoRegLib (went from AutoRegLib-1.3-26.jar to AutoRegLib-1.3-32.jar):
+		AutoRegLib-1.3-32.jar:
+			- Added more rotation utils.
+
+			- Allow blocks with blockstate variants to map items models to item jsons.
+
+			- Fixed Multi Recipes not showing up in JEI.
+
+			- Fixed a rare crash when an invalid event is passed to the client ticker.
+		AutoRegLib-1.3-31.jar:
+			- Fixed desyncs with drop-in.
+		AutoRegLib-1.3-30.jar:
+			- Added an unlisted blockstate property
+		AutoRegLib-1.3-29.jar:
+			- Fixed using right click to add items leaving client artifacts behind.
+		AutoRegLib-1.3-28.jar:
+			- Fixed recipes that resolve in air causing issues with other mods.
+
+			- Fixed some blocks being dark.
+		AutoRegLib-1.3-27.jar:
+			- Added a rotation util for Quark.
+
+			- Fixed drop in crashing with inventories that have loot tables (WireSegal)
+
+			- Fixed picking block getting state from the world despite being given one.
+
+	B.A.S.E (went from base-1.12.2-3.12.0.jar to base-1.12.2-3.13.0.jar):
+		base-1.12.2-3.13.0.jar:
+			 * New
+			 * Material System
+			 * 12 Parts: "centrifuged_ore", "chipped_gem", "flawed_gem", "flawless_gem", "large_spring", "long_rod", "purified_ore", "ring", "round", "small_dust", "small_spring", "tiny_dust"
+			 * Fixes
+			 * Material System
+			 * Ores no longer drop full stacks after a period of time
+			 * Custom Records now get proper Models
+		base-1.12.2-3.12.1.jar:
+			Added:
+
+			 * Item Material Parts may now have their stacksize limit adjusted
+			 * Better area breaking tool handling (required to support SAR 0.5.0)
+			Fixed:
+
+			 * Model generator only allowed one mod at a time
+			 * BASE Minecart bounding boxes now set correctly
+
+	Baubley Heart Canisters (went from baubley-heart-canisters-1.12.2-1.2.3.jar to baubley-heart-canisters-1.12.2-2.0.3.jar):
+		baubley-heart-canisters-1.12.2-2.0.3.jar:
+			Fixed Advancements
+		baubley-heart-canisters-1.12.2-2.0.2.jar:
+			[https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md](https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md)
+		baubley-heart-canisters-1.12.2-2.0.1.jar:
+			I GOOFED! EASY FIX :D
+
+			[https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md](https://github.com/Radient-Sora/Baubley-Heart-Canisters/blob/v2.0/changelog.md)
+
+	Better Builder's Wands (went from Better Builder's Wands 0.11.1 [MC1.12; rev 245] to Better Builder's Wands 0.13.2 [MC1.12; rev 271]):
+		Better Builder's Wands 0.13.2 [MC1.12; rev 271]:
+			Minor changes:
+			* Be better behaved so that Thermal Expansion isn't Thermal Duping.
+		Better Builder's Wands 0.13.1 [MC1.12; rev 269]:
+			Minor changes:
+			* Make a call to an additional method on block placement.
+		Better Builder's Wands 0.13.0 [MC1.12; rev 267]:
+			Some backend changes plus
+			* Stop wands appearing in some unwanted places.
+			* Made the default keybind Alt + F (not Alt + F4).
+			* Russian language file.
+			* Hopefully make botania stuff work better
+		Better Builder's Wands 0.12.1 [MC1.12; rev 254]:
+			Update to newer forge. Hopefully this version fixes at least more bugs than it creates.
+			Fixes
+			* Wands should have proper info text.
+			* Wand upgrade recipes should work better.
+		Better Builder's Wands 0.12.0 [MC1.12; rev 251]:
+			0.11.1
+
+	Blockcraftery (went from blockcraftery-1.12.2-1.2.0.jar to blockcraftery-1.12.2-1.3.1.jar):
+		blockcraftery-1.12.2-1.3.1.jar:
+			Fixed blocks not saving their rotations
+
+			WARNING: Currently glowstone only works on slabs and regular blocks.
+		blockcraftery-1.12.2-1.3.0.jar:
+			There are a lot of bugfixes in this release. Sorry it took so long to get to this, updates should be more stable now.
+
+			This update was supposed to be much bigger with far more content but will be released over the course of a few updates now to get the fixes out earlier.
+
+			New:
+
+			 * Doors - Both the top and bottom half are customisable
+			 * Trapdoors
+			 * Pressure Plates - These come in 4 varieties - All, items, players and mobs. Weighted pressure plates are not yet included
+			Fixes:
+
+			 * Too many to list, see the closed issues on github instead if you want to know.
+
+	Blood Arsenal (went from BloodArsenal-1.12.2-2.1.0-26.jar to BloodArsenal-1.12.2-2.2.0-28.jar):
+		BloodArsenal-1.12.2-2.2.0-28.jar:
+			- ADDED THE SENTIENT MODIFIER FOR TINKERS CONSTRUCT
+			- Added actual particle effects to rituals
+			- Fixed some more bugs
+		BloodArsenal-1.12.2-2.2.0-27.jar:
+			------------------------------------------------------
+			Version 2.2.0-27
+			------------------------------------------------------
+			- Update to latest Blood Magic version
+			- Fixed losing items due to glass death bug (for real this time)
+			- Fixed Purification Ritual not working properly
+			- Fixed the Altare Aenigmatica
+			- Tinkers!
+			- Probably a few more bugs that got squashed too
+
+	Blood Magic  (went from BloodMagic-1.12.2-2.4.0-102.jar to BloodMagic-1.12.2-2.4.1-103.jar):
+		BloodMagic-1.12.2-2.4.1-103.jar:
+			Version 2.4.1:
+
+			Nut was too lazy to create a changelog, it's AEon's turn now!
+			Changes made from Feb 02 - now (Fill end date in later)
+
+			Living Armor:
+			 - Fixed "Soft Fall" not preventing damage
+			 - "Nocturnal Prowess" should not flash anymore
+			 - "Trickshot" now ignores HurtResistanceTime
+			 - "Trickshot" now works properly with sentient arrows
+			 - "Step Assist" does not take effect while sneaking
+
+			Sentient Bow:
+			 - Fixed Destructive Will arrows exploding continuously
+			 - Fixed Tipped Arrows getting improved even if no Will can be used
+
+			Sigils:
+			 - Buffed "Sigil of the Fast Miner" to be in accordance to the "Sanguine Scientium"
+			 - Fixed a bug where "Sigil of the Fast Miner" would also cause the whirlwind effect
+			 - Added "Whirlwind" to the potion registry
+			 - Fixed broken Sigil tooltip formatting
+			 - Fixed Sigil of Holding not updating some Sigil data, allowing for exploits
+			 - Greatly improved "Sigil of Compression" performance
+			 - Fixed "Sigil of Compression" bug that would eat leftover items (usually everything between 55 and 64 items for a 3x3 compression)
+
+			Rituals:
+			 - Ported Veil of Evil & Ward of Sacrosanctity
+			 - Fixed "Serenade of the Nether" replacing lava source blocks with lava (fixed underlying function to detect flowing liquids)
+			 - Added configurability to Ritual of the High Jump by modifying a new ritual area with the Ritual Tinkerer
+
+			Misc:
+			 - Fixed routing node oredict filter (crashes)
+			 - Fixed mimic vanishing in some cases
+			 - Fixed "Blood Letter's Pack" and "Coat of Arms" always being used in the main hand slot (action bar/hotbar)
+			 - Stop insertions into Demon Crucible if the inventory is not empty
+			 - Fixed abnormal deaths at your own hands through the sacrificial dagger (hopefully) (Gravestone bugginess)
+			 - Fixed "Unmending" mod incompatibility
+			 - Fixed Teleposers crashing the game if someone force-fed it junk
+			 - added Nut being angery at contributors for messing stuff up
+			 - Added some Russian language strings for the guide book
+			 - Added repair recipes for Sentient Tools & Living Armor to JEI
+
+			Technical Stuff no player cares about:
+			 - Formatted Project code
+			 - Fixed BlockState parsing (mimic vanishing)
+			 - Fixed some and streamlined ritual block ranges
+			 - Mystery drain still mysterious
+			 - Use TextFormatting rather than color codes in block lang names
+			 - Fixed world unload crash (may happen if a world is loaded by world generators or JEI Resource graphing)
+			 - Fixed `/bloodmagic network get` command
+			 - Added translation keys for tickethistory command help strings
+
+	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
+		Botania r1.10-361.jar:
+			See [http://botaniamod.net/changelog.php#r1.10-361](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fbotaniamod.net%252fchangelog.php%2523r1.10-361)
+
+	Botania Tweaks (went from botaniatweaks-1.8.4.jar to botaniatweaks-1.8.6.jar):
+		botaniatweaks-1.8.6.jar:
+			Fix accidentally depending on mtlib
+		botaniatweaks-1.8.5.jar:
+			- add config option for which blocks work with the "auto corporea spark" feature
+
+			- slightly clean up crafttweaker stuff - should work better with custom pages added thru ModTweaker, let me know!
+
+			- clean up log spam
+
+			- remove "till altgrass" tweak, since it just happens in regular botania now
+
+			- add Key of the King's Law damage output tweak, you can make it super OP if you have Scaling Health mobs (or if you just want to make it super OP)
+
+			- add config option for enchantment power of mana/natura/gaia pylons
+
+	Building Gadgets (went from BuildingGadgets v2.6.6 to BuildingGadgets-2.7.1.jar):
+		BuildingGadgets-2.7.1.jar:
+			See the full [CHANGELOG](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+
+			[2.7.1 - 1.12.2] - 2019-07-23
+
+			Fixed
+
+			 * Fixed an issue causing the game to crash when using the material list key on anything but the Copy&Paste Gadget or air.
+		BuildingGadgets-2.7.0.jar:
+			Full Changelog [here](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+
+			Note:
+
+			A note for this update, due to the pure amount of changes made between this version and the previous version we're just going to put it out there that this one might be a bit buggy! 🐛 If you encounter any issues with how the mod used to work to how it works now please be sure to create a new issue on the [Github Repo](https://github.com/Direwolf20-MC/BuildingGadgets/issues)
+
+			Added
+
+			 *  Added a new and fancy Material List GUI for templates. Simply shift right click with a template in your hand to see the list.
+			 * With this you can also now copy the material list right into your clipboard!
+			 * Some people where finding it hard to open the Copy & Paste Gadgets GUI in tight spaces so to help with this we've added a button in the Radial Menu (G) to go straight to it :)
+			Changed
+
+			 *  The Building and Exchanging Gadgets mode System, to make it more open for future additions. Thanks @hnOsmium001 for his PR.
+			 * This also resulted in a lot of changes - please report any bugs you might encounter as a lot of the core functionality has been changed in this version.
+			 * Updated the Destruction Gadget's GUI as it needed some scaling and usability work. It's better but it's not pretty! Soz.
+			 * The destruction gadget now uses a different kind of magic for finding connected blocks. This should resolve any issues people have been having with less powerful computers and large selection ranges.
+			 * Added slightly better handling of random crashes to hopefully reduce them... Wish us luck.
+			Fixed
+
+			 * Fix typo when pasting a link
+			 * Fixed an issue where linked inventories (Yeah, you can link loads of them now. Just shift right click with a supported Gadget!) would stay highlighted in different dimensions.
+			 * Fixed an odd one where linked inventories would throw out items if the dimension got deleted.
+			 * Fixed an exploit where the Exchanging Gadget could be used as a way to mine large areas quickly.
+			 * Fixed an issue with the new modes system using the Building Gadgets range in Build To Me mode which wasn't even close to right.
+			For Devs
+
+			 * We're now firing Break & Place block events for each of our tools semi correctly. We've not been able to do large scale tests so if you have any more issues then let us know.
+		BuildingGadgets v2.6.8:
+			Full Changelog: [https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+
+			Added
+
+			 * Added settings to the radial menu for rotation, mirroring, undoing, and anchoring. All operations that can be performed by a keybind can now be performed via the radial menu.
+			 * A Building or Exchanging gadget can now rotate/mirror its selected blockstate (using either its new keybind, which is not set by default, or using the radial menu).
+			 * Example: Selecting a stair block, then rotating it.
+			Changed
+
+			 * Separated rotation/mirror keybind (not set by default) from range (still default of R).
+			 * Raised the energy costs in recipes to 4000/1000 from
+			 * 400/100 in the pulverizer and fluid extractor [Thermal Expansion]
+			 * 1600/400 in the crusher [Immersive Engineering]
+		BuildingGadgets v2.6.7:
+			Full Changelog: [https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md](https://github.com/Direwolf20-MC/BuildingGadgets/blob/master/CHANGELOG.md)
+
+			Added
+
+			 * The copy/paste gadget can now mirror pastes, as well as rotate them. Sneak while pressing the keybind that previously just rotated them to mirror them left-to-right instead.
+			 * Added/changed radial menu functionality/aesthetics:
+			 * Converted text-based settings controls to icon-based ones.
+			 * Prevented mode strings from rendering when the cursor is not over its corresponding slice.
+			 * Added range slider.
+			 * Allowed gadgets to bind Simple Storage Network networks as a remote inventories (you can only bind the Storage Network Master block).
+			 * Dense construction blocks now drop 1-3 (configurable) construction paste items.
+			 * The process of generating construction paste is now as follows:
+			 * Craft a construction powder block.
+			 * Convert the powder into a dense construction block by either placing it in the word next to water, or using one of the following machines:
+			 * Fluid Transposer [Thermal Expansion]
+			 * Hydrator [Cyclic]
+			 * Moistener [Forestry]
+			 * Get paste from the block by either:
+			 * Breaking it, yielding 1-3 paste.
+			 * Using machines:
+			 * Convert it into dense construction chunks (1 block -> 4 chunks):
+			 * Pulverizer [Thermal Expansion]
+			 * Macerator [Industrial Craft 2]
+			 * Grinder [Applied Energistics 2]
+			 * Crusher [Mekanism]
+			 * Crusher [Immersive Engineering]
+			 * Crusher [Actually Additions]
+			 * Convert the chunks into paste using any of the machines listed in step 3 (1 chunk -> 1 paste).
+			Changed
+
+			 * Nearly every ingredient of every recipe now uses the ore dictionary.
+			 * Templates can be copied to the clipboard from template items, as well as copy/paste gadgets in the Template Manager GUI.
+			 * Remote networks are now only wrapped once build/exchange/undo operation, rather than twice per placed block.
+
+	Chisels & Bits (went from chiselsandbits-14.31.jar to chiselsandbits-14.33.jar):
+		chiselsandbits-14.33.jar:
+			 * Fix an issue with item duplication.
+			 * Fix an issue with placing chiseled blocks.
+			 * Fix an issue with fake players not being able to place chiseled blocks properly.
+			 * Fix deleting chisels and broken crafting recipe when chisel damage is disabled.
+		chiselsandbits-14.32.jar:
+			Add French translation (Thanks to Neerwan)
+
+			Fix a few typos in configuration text (Thanks to Neerwan)
+
+	Common Capabilities (went from CommonCapabilities-1.12.2-2.1.0.jar to CommonCapabilities-1.12.2-2.4.4.jar):
+		CommonCapabilities-1.12.2-2.4.4.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Store counts in PrototypedIngredientAlternativesItemStackOredictionary
+			 Required for CyclopsMC/IntegratedDynamics#752
+
+			Fixes:
+			* Fix IngredientComponent registry crash when CommonCaps is not available
+		CommonCapabilities-1.12.2-2.4.3.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Improve performance of storage wrapping by avoiding hasCapability calls
+		CommonCapabilities-1.12.2-2.4.2.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Additions:
+
+			Changes:
+
+			Fixes:
+			* Add slotless item handler for Thermal Expansion caches
+			 This fixes Integrated Crafting not being able to craft
+			 with 64+ items at a time when extracting from caches.
+			 Closes CyclopsMC/IntegratedCrafting#27
+			* Fix slotted extraction from slotless item handler emitting wrong items
+			 This fixes a dupe exploit when AE2 is used over IT item tunnels.
+			 Closes CyclopsMC/IntegratedTunnels#166
+		CommonCapabilities-1.12.2-2.4.1.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Fixes:
+			* Fix crash when comparing recipe definitions
+			 Closes CyclopsMC/IntegratedTerminals#36
+		CommonCapabilities-1.12.2-2.4.0.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.3.0 or higher.
+
+			Changes:
+			* Expand SlotlessItemHandlerWrapper with multiple slots
+
+			Fixes:
+			* Fix Blood Magic orbs not autocompleting in Integrated Terminals JEI
+			 Closes CyclopsMC/IntegratedTerminals#31
+		CommonCapabilities-1.12.2-2.3.0.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.2.0 or higher.
+
+			Changes:
+			* Add containsAll and isEmpty methods to IMixedIngredients
+			 Needed for CyclopsMC/IntegratedCrafting#30
+			* Make single recipe inputs more loose
+			 For recipes that only require a single input,
+			 they can now appear anywhere within the recipe,
+			 even if there are empty slots before them.
+			 Needed for CyclopsMC/IntegratedCrafting#30
+			* Remove CyclopsCore dependency in prototyped alternatives
+			* Make ItemMatch in API independent from main mod
+
+			Fixes:
+			* Fix ingredients being equal even if their ingred length is non-equal
+			* Fix edge-case when comparing null ItemStack tags, Closes #6
+		CommonCapabilities-1.12.2-2.2.1.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.2.0 or higher.
+
+			Fixes:
+			* Fix invalid item capabilities on (upgraded) TE Satchels, Closes #20
+			* Add config option to ignore NBT paths inside NBT tags during comparisons.
+			 Fixes a problem where Astral Sorcery (capabilities) would break Integrated Crafting recipes.
+			 CyclopsMC/IntegratedCrafting#17
+		CommonCapabilities-1.12.2-2.2.0.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Additions:
+			* Add integration for Thermal Expansion
+			 * Add recipe handler capabilities for TE machines
+			 * Add worker capabilities to all TE machines
+			 * Add item handler capabilities to TE items (satchel, strongbox, cache)
+			 * Add wrench capability to the Cresent Hammer
+			* Restore Forestry compat
+			* Add recipe handler capabilities for Forestry machines
+			* Restore TCon compat
+			* Add worker capability for TCon's Drying Rack
+			* Add recipe handler capabilities for TCon machines
+		CommonCapabilities-1.12.2-2.1.1.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Changes:
+			* Update to Forge 14.23.5.2768 and MCP snapshot_20180814
+
+	Construct's Armory (went from conarm-1.12.2-1.2.3.jar to conarm-1.12.2-1.2.4.jar):
+		conarm-1.12.2-1.2.4.jar:
+			[https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
+		conarm-1.12.2-1.2.3.4.jar:
+			See: [https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
+		conarm-1.12.2-1.2.3.3.jar:
+			See: [https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
+		conarm-1.12.2-1.2.3.2.jar:
+			See: [https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
+		conarm-1.12.2-1.2.3.1.jar:
+			See: [https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md](https://github.com/TheIllusiveC4/ConstructsArmory/blob/master/docs/CHANGELOG.md)
+
+	Controlling (went from Controlling-3.0.6 to Controlling-3.0.7):
+		Controlling-3.0.7:
+			added French language
+
+	Corail Tombstone (went from Corail Tombstone 3.3.3 for 1.12.2 to Corail Tombstone 3.5.5 for 1.12.2):
+		Corail Tombstone 3.5.5 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.14.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.5 - Recommended : 3.5.4
+
+			Changes 3.5.5 :
+
+			 * custom trigger for advancements (#68)
+			Changes 3.5.4 :
+
+			 * fix #66 (decorative graves rotate sometimes)
+			 * fix #67 (some bad effects are not correctly removed by the Purification effect)
+			Changes 3.5.3 :
+
+			 * removes the config option to activate the compat for Blood Magic (preventing the bug of this mod related to the sacrificial dagger), and instead apply it automatically if Blood Magic is present and doesn't have the fix (so any version before BloodMagic 2.4.1) + log on startup mentioning it
+			 * minimizes the nbt sent to client for the familiar receptacle (shareTag)
+			 * prevents the custom description of tombstone's enchantments to be searcheable in JEI
+			 * reduces permission level of server commands to 2
+			 * adapts the code related to translations (to be similar to 1.13)
+			 * separates the recipe unlocks from the normal advancements
+			 * reduces the cooldown to bound tablet of recall to decorative graves
+			 * updates the potion effects blacklisted by default
+			Changes 3.5.2 :
+
+			 * allows the command reviveFamiliar, when there're no backups, to fallback to revive a familiar from a receptacle in the player's inventory
+			 * disables by default the compatibilities with BloodMagic (preventing the bug of sacrificial dagger, as they finally published a fix) and with Aether legacy (auto-equip)
+			 * fix ankh interaction (#63)
+			 * display directly the plate on engraved decorative graves when placed
+			 * decorative graves require a ground for placement
+			 * the duration of the buff sometimes given by the prayer is scaled on the cooldown to pray again
+			 * the custom damage (related to lost tablets & receptacle) is reduced based on the level in knowledge of death (your total perk points)
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+		Corail Tombstone 3.5.4 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.4 - Recommended : 3.5.4
+
+			Changes 3.5.4 :
+
+			 * fix #66 (decorative graves rotate sometimes)
+			 * fix #67 (some bad effects are not correctly removed by the Purification effect)
+			Changes 3.5.3 :
+
+			 * removes the config option to activate the compat for Blood Magic (preventing the bug of this mod related to the sacrificial dagger), and instead apply it automatically if Blood Magic is present and doesn't have the fix (so any version before BloodMagic 2.4.1) + log on startup mentioning it
+			 * minimizes the nbt sent to client for the familiar receptacle (shareTag)
+			 * prevents the custom description of tombstone's enchantments to be searcheable in JEI
+			 * reduces permission level of server commands to 2
+			 * adapts the code related to translations (to be similar to 1.13)
+			 * separates the recipe unlocks from the normal advancements
+			 * reduces the cooldown to bound tablet of recall to decorative graves
+			 * updates the potion effects blacklisted by default
+			Changes 3.5.2 :
+
+			 * allows the command reviveFamiliar, when there're no backups, to fallback to revive a familiar from a receptacle in the player's inventory
+			 * disables by default the compatibilities with BloodMagic (preventing the bug of sacrificial dagger, as they finally published a fix) and with Aether legacy (auto-equip)
+			 * fix ankh interaction (#63)
+			 * display directly the plate on engraved decorative graves when placed
+			 * decorative graves require a ground for placement
+			 * the duration of the buff sometimes given by the prayer is scaled on the cooldown to pray again
+			 * the custom damage (related to lost tablets & receptacle) is reduced based on the level in knowledge of death (your total perk points)
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.3 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.3 - Recommended : 3.5.3
+
+			Changes 3.5.3 :
+
+			 * removes the config option to activate the compat for Blood Magic (preventing the bug of this mod related to the sacrificial dagger), and instead apply it automatically if Blood Magic is present and doesn't have the fix (so any version before BloodMagic 2.4.1) + log on startup mentioning it
+			 * minimizes the nbt sent to client for the familiar receptacle (shareTag)
+			 * prevents the custom description of tombstone's enchantments to be searcheable in JEI
+			 * reduces permission level of server commands to 2
+			 * adapts the code related to translations (to be similar to 1.13)
+			 * separates the recipe unlocks from the normal advancements
+			 * reduces the cooldown to bound tablet of recall to decorative graves
+			 * updates the potion effects blacklisted by default
+			Changes 3.5.2 :
+
+			 * allows the command reviveFamiliar, when there're no backups, to fallback to revive a familiar from a receptacle in the player's inventory
+			 * disables by default the compatibilities with BloodMagic (preventing the bug of sacrificial dagger, as they finally published a fix) and with Aether legacy (auto-equip)
+			 * fix ankh interaction (#63)
+			 * display directly the plate on engraved decorative graves when placed
+			 * decorative graves require a ground for placement
+			 * the duration of the buff sometimes given by the prayer is scaled on the cooldown to pray again
+			 * the custom damage (related to lost tablets & receptacle) is reduced based on the level in knowledge of death (your total perk points)
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.2 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.2 - Recommended : 3.4.1
+
+			Changes 3.5.2 :
+
+			 * allows the command reviveFamiliar, when there're no backups, to fallback to revive a familiar from a receptacle in the player's inventory
+			 * disables by default the compatibilities with BloodMagic (preventing the bug of sacrificial dagger, as they finally published a fix) and with Aether legacy (auto-equip)
+			 * fix ankh interaction (#63)
+			 * display directly the plate on engraved decorative graves when placed
+			 * decorative graves require a ground for placement
+			 * the duration of the buff sometimes given by the prayer is scaled on the cooldown to pray again
+			 * the custom damage (related to lost tablets & receptacle) is reduced based on the level in knowledge of death (your total perk points)
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.1 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.1 - Recommended : 3.4.1
+
+			Changes 3.5.1 :
+
+			 * fix the maxStackSize of crafting ingredients (#61)
+			 * the ankh can only be used in right hand, and prevent to pray with a receptacle in offhand if the condition doesn't fit
+			 * config for a blacklist of creatures not capturable in receptacle (+ event in api)
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.5.0 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.5.0 - Recommended : 3.4.1
+
+			Changes 3.5.0 :
+
+			 * new item Familiar Receptacle allowing to capture the soul of a dead familiar (unlocked at lvl 10 in Knowledge of Death)
+			 * config to set the cooldown to pray with the ankh (#41)
+			 * lost tablets will absorb player life while waking up (dying from this damage makes you lose 10 knowledge points - perks are automatically adjusted)
+			 * config to set a lost of knowledge points when dying (default = 0)
+			 * new command TBReviveFamiliar to revive the last dead familiar of a player (limited to 5 saves, and the save is deleted after the command)
+			 * config option to allow to backup the dead familiars (allowing the command to revive them)
+			 * the ingredient for the crafting recipe for the enchanted key uses now the oredict "ingredientEnchantedGraveKey" instead of "enderpearl" (#54)
+			 * merge some items only used as crafting ingredient in the same item (dataFixer)
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.4.1 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.4.1 - Recommended : 3.4.1
+
+			Changes 3.4.1 :
+
+			 * fix lost tablets can't wake up (since 3.3.4)
+			 * adapt the display in hand for grave's dust
+			 * only consider itemstack with a maxStackSize of 1 when auto-equiping (except for Techguns2)
+			Changes 3.4.0 :
+
+			 * add the compendium to provide infos ingame
+			 * always looks for an existing grave nearby when you die, even if the server has been restarted
+			(was initially done to avoid griefing with graves)
+			 * always allow to open a grave if you're the owner even without key (was an oversight, and it will be a better alternative than breaking the grave in creative mode)
+			 * introduce an api to expose the perks, some events, the grave's key recipe (#54), the interfaces for player capability and to interact with decorative graves (provided on [github](https://github.com/Corail31/tombstone-api))
+			 * minor changes on advancement (#55, #56)
+			 * lollipops can be eaten in creative mode
+			 * avoid to copy itemstacks when not necessary
+		Corail Tombstone 3.3.6 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.3.6 - Recommended : 3.3.5
+
+			Changes 3.3.6 :
+
+			 * config to activate the halloween event (suggestion #53)
+			 * change the client config option "enableHalloweenGrave" to a new one allowing to set the preference for grave skin (default, force halloween, force normal)
+			 * adapt the gui of knowledge of death to display the provisory perk bonus (ex: halloween, contributor) + display the % kept xp & the % to have an enchanted grave's key in the perk tooltip
+			 * fix the server log about player grave (unformatted correctly)
+			 * fix the perk "memento mori" to provide the good bonus (was lower)
+			 * config to define a cooldown for the reset of the perks with the ânkh (default = 20 minutes)
+			Changes 3.3.5 :
+
+			 * client config option to hide the custom tooltips for enchantments of Tombstone & compat to avoid to display them when some specific mods are presents
+			 * the chance of buff when praying as been adjusted down to fit 1.13.2
+			 * the client config option to showFog is replaced by a new one allowing to set the fog density (default=low)
+			 * change the command tbknowledge to fit 1.13.2 (show|set|give|remove)
+			 * config option to define the loottables having a chance to contain a magic scroll
+			 * add the comments for config options (allowing the description to be visible in cfg)
+		Corail Tombstone 3.3.5 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.13.2
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.3.5 - Recommended : 3.3.5
+
+			Changes 3.3.5 :
+
+			 * client config option to hide the custom tooltips for enchantments of Tombstone & compat to avoid to display them when some specific mods are presents
+			 * the chance of buff when praying as been adjusted down to fit 1.13.2
+			 * the client config option to showFog is replaced by a new one allowing to set the fog density (default=low)
+			 * change the command tbknowledge to fit 1.13.2 (show|set|give|remove)
+			 * config option to define the loottables having a chance to contain a magic scroll
+			 * add the comments for config options (allowing the description to be visible in cfg)
+		Corail Tombstone 3.3.4 for 1.12.2:
+			This mod supports mc version from 1.8.9 to 1.12
+			Minecraft Version = [1.12.2] - Forge Version [14.23.2.2611+]
+			Latest : 3.3.4 - Recommended : 3.3.4
+
+			Changes 3.3.4 :
+
+			 * multiple minor changes (also free few item ids)
+			 * adapt the grave smoke
+			 * allow to downgrade perk in creative
+			 * additional compat with Just Enough Dimension & cooldown
+			Changes 3.3.3 :
+
+			 * auto-equip for the new api of Aether Legacy (old versions won't be handled now so)
+			 * fix #48 (compat with JED about the totalWorldTime and the cooldown of the Ankh)
+			Changes 3.3.2 :
+
+			 * fix #42 (compat with forge 2777+ & revengeTarget)
+			Changes 3.3.1 :
+
+			 * update lang en
+			 * update api for cubicchunks & JEI
+			 * disable the auto-equip with new version of aether legacy (the support for this version will only be changed in some times
+
+	CraftPresence (went from CraftPresence v1.5.0 (1.12.2) to CraftPresence v1.5.5 (1.12.2)):
+		CraftPresence v1.5.5 (1.12.2):
+			CraftPresence Changes
+
+			v1.5.5 (06/07/2019)
+
+			Changes:
+
+			 *
+			Added 1.14.2 Fabric Support (1.14 and 1.14.1 Versions are now Deprecated)
+
+			 *
+			Commands for viewing Assets, Servers, Dimensions, GUIs, and Biomes have been changed to open their Lists in a Selector GUI
+
+			 *
+			Added Options to Accessibility GUI:
+
+			 *
+			Option to Customize GUI Background to a Color or Texture
+
+			 *
+			Extended Previous Tooltip Color Options to also be able to use a Texture
+
+			 *
+			Added Options for Language ID and Setting KeyBindings for Universal Compatibility (Custom Rift Jar no longer Required for KeyBind Fix)
+
+			 *
+			Added Options to Advanced GUI:
+
+			 *
+			Option to Disable Rendering Tooltips
+
+			 *
+			Options to Edit or Re-Sync Character and Glyph Widths
+
+			 *
+			Added an Option to Reset your Config to Default Settings
+
+			 *
+			Fully Deprecated I18n, to put Newer Translation System in Full Control
+
+			 *
+			Added Boolean to TranslationHandler to control whether Color Codes are Included in Translated Text
+
+			 *
+			Added Additional Formatting Rules to Dimension Name Formatting
+
+			 *
+			Removed some Sections of Live Editing due to Issues caused with some Config Options requiring Saving
+
+			 *
+			Changing your Split Character will now transfer your other settings to the New Character on Verification
+
+			Fixes:
+
+			 *
+			Fixes Game Crashing from Null List in Selector (Will now bring you immediately back to original Screen)
+
+			 *
+			Fixes Issues with Config Verification failing to Re-Run if it needs a full update
+
+			 *
+			Fixed Double Logging in ConfigHandler (Now has a parameter to Skip Logging at the End)
+
+			 *
+			Initialization now takes place much earlier and no longer requires Main Menu Stuff
+
+			 *
+			Fixes Improper Centering of Buttons in Advanced Settings GUI
+
+			 *
+			Fixes Several Possible Cases of NPEs
+
+			 *
+			Fixes an NPE within GUIs if Config is null
+
+			 *
+			Fixes KeyBindings not functioning when not in a Game (Now work properly once on Main Menu)
+
+			 *
+			Fixes a Bug with Translation Resource Loading (Now tries to use Main Thread Loader, then local ClassLoader)
+
+			 *
+			Fixes an Exception with Missing Format Arguments in Translation Handler
+
+			 *
+			Fixes Some Selector Titles Not being Localized Properly
+
+			 *
+			Fixes an Extremely Rare Bug with Small Icon List coming up for /cp view assets large
+
+			 *
+			Fixes some Encoding Bugs causing Translations or JSON Retrievals to have garbled data
+
+			More Information:
+
+			Command Rewrite Info:
+
+			Starting In v1.5.0, Commands for CraftPresence are now within a new menu of the Config Gui.
+
+			Along with this rewrite, take note of the following:
+
+			 *
+			Tab Completion will only work for the most likely suggestion, and will only suggest for more then 2 characters in a word.
+
+			 *
+			Only CraftPresence Commands, started with /cp or /craftpresence are Supported!
+
+			 *
+			At this time, in 1.13.2 and 1.14, The Config GUI can only open in-game due to an unknown issue.
+
+			This GUI is subject to improve as future updates are released.
+
+			1.13.x Build Info:
+
+			The Rift Edition of this Mod Requires the [Rift ModLoader](https://minecraft.curseforge.com/projects/rift) and contains the following differences to take Note of:
+
+			 * KeyCodes have changed from an LWJGL Upgrade! Be Sure to Check and Edit your KeyBinds if Migrating from 1.12.2 and Below
+			Starting In v1.5.0, The 1.13 Rift Port of CraftPresence was deprecated in favor of the 1.13.2 Rift Port
+
+			1.14.x Build Info:
+
+			The 1.14.x Port of this Mod Requires the [FabricMC ModLoader](https://minecraft.curseforge.com/projects/fabric) and contains the same differences as the 1.13.x Port
+
+			This Version of the Build is based on Minecraft Snapshots, since 1.14 is not fully released, caution is advised.
+
+			A 1.14.x Snapshot Build will be marked as BETA to match it's Snapshot Status
+
+			Legacy Build Info (Minecraft Versions 1.5.2 and Below):
+
+			Ports of this Mod for Minecraft Versions 1.5.2 and Lower are on very limited support.
+
+			Please Keep in Mind the Following:
+
+			 *
+			There is NO Support for Server RPC Displays from MC 1.2.5 and Below, due to Modding Limitations.
+
+			 *
+			Bugs that Relate with or are caused by Issues in the Vanilla CodeBase, are unlikely able to be fixed due to MC's Limitations
+
+			Please See the Mod Description // README for More Info
+
+	CraftTweaker (went from CraftTweaker2-1.12-4.1.15 to CraftTweaker2-1.12-4.1.19):
+		CraftTweaker2-1.12-4.1.19:
+			Properly check the display tag instead of the root tag for pre-existing Lore (Thanks Nooby!)
+
+			Added some null checks and code cleanup Close #799
+
+			Added player#sendStatusMessage Close #798
+
+			Tooltip overhaul, remove tooltips by regex, Closes #788
+
+			Implement IAction validation
+
+			added IFormattedText version of sendStatus
+
+			Added keyboard support Close #800
+		CraftTweaker2-1.12-4.1.18:
+			Fixed timeouts when connecting to servers
+
+			added player tick event phases
+
+			Fixed output from /ctgui
+
+			Fixed NBT matching
+
+			Fixed StringIDataParser not accepting String inputs. (Thanks Kindlich!)
+		CraftTweaker2-1.12-4.1.17:
+			Added more liquid dump info
+
+			Fixed JEI hiding issues (Thanks Mezz!)
+
+			Enchantment improvements (Thanks Nooby!)
+
+			Potion improvements (Thanks Nooby!)
+		CraftTweaker2-1.12-4.1.16:
+			Made IIngredient more null safe
+
+			Added IItemStack#isBlock
+
+			WIP: Added print statement to MCREcipeManager
+
+			Added #profile to get stats on action time
+
+			Fixed issue with ZS types
+
+	Cyclops Core (went from CyclopsCore-1.12.2-1.0.6.jar to CyclopsCore-1.12.2-1.5.0.jar):
+		CyclopsCore-1.12.2-1.5.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Additions:
+			* Add infobook button to open Web version
+			* Add dumpregistries command with ability to dump crafting recipe registry
+
+			Changes:
+			* Make keybinding appendix title dependent on mod
+			* Include rewards localization string
+			* Update to latest CommonCaps API version
+		CyclopsCore-1.12.2-1.4.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Lib changes:
+			* Throw exception instead of warning on lost ingred during movement
+			 This fixed the problem where items could silently go lost
+			 in Integrated Tunnels network upon movement failures.
+
+			Lib additions:
+			* Add getter for scroll position in GuiScrollBar
+		CyclopsCore-1.12.2-1.3.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Changes:
+			* Allow insert/extract in indexed inventories over max stack size
+			 Required for CyclopsMC/IntegratedCrafting#27
+
+			Fixes:
+			* Catch ingredient transfer for out-of-bound slots
+			 Closes CyclopsMC/IntegratedDynamics#730
+		CyclopsCore-1.12.2-1.2.1.jar:
+			As always, don't forget to backup your world before updating!
+
+			Fixes:
+			* Fix recipe handlers having invalid interfaces, Closes CyclopsMC/IntegratedDynamics#722
+		CyclopsCore-1.12.2-1.2.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Changes:
+			* Mention file name on XML recipe file validation error, Closes #135
+
+			Lib additions:
+			* Add NBT Paths: [https://github.com/CyclopsMC/CyclopsCore/wiki/NBT-Path](https://github.com/CyclopsMC/CyclopsCore/wiki/NBT-Path)
+		CyclopsCore-1.12.2-1.1.1.jar:
+			As always, don't forget to backup your world before updating!
+
+			Lib additions:
+			* Add FluidStack NBTClassType
+			* Add synced gui variable abstraction
+			 This allows variables inside guis to be more
+			 easily synced between client and server.
+		CyclopsCore-1.12.2-1.1.0.jar:
+			As always, don't forget to backup your world before updating!
+
+			Changes:
+			* Update to Forge 14.23.5.2768 and MCP snapshot_20180814
+
+			Lib changes:
+			* Add more efficient method for checking if a config is enabled, Closes #116
+			* Deprecate SendPlayerCapabilitiesPacket, Closes #123
+
+	Dark Utilities (went from DarkUtils-1.12.2-1.8.223.jar to DarkUtils-1.12.2-1.8.226.jar):
+		DarkUtils-1.12.2-1.8.226.jar:
+			 * Fixed mobs not being able to walk over flat blocks like Vector Plates and traps.
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtils)
+
+			 * NillerMedDild
+			 * Jonathan McManus
+			 * Varitek
+			 * Pongo Sapiens
+			 * Darkosto
+		DarkUtils-1.12.2-1.8.225.jar:
+			 * Fixed fire resistance filter not accounting for potion effect. Thanks to alexbobp. - alexbobp
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtils)
+
+			 * NillerMedDild
+			 * Jonathan McManus
+			 * Varitek
+			 * Pongo Sapiens
+			 * Darkosto
+		DarkUtils-1.12.2-1.8.224.jar:
+			 * Increased the power range of the sneaky pressure plate. This makes it more usable in traditional circumstances. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtils)
+
+			 * NillerMedDild
+			 * Jonathan McManus
+			 * Tristan McMahon
+			 * Pongo Sapiens
+			 * Darkosto
+
+	Dragon Mounts 2 (went from DragonMounts-1.12.2-1.5.5jar to DragonMounts2-1.12.2-1.6.3.jar):
+		DragonMounts2-1.12.2-1.6.3.jar:
+			Fixed dragons not being sheared
+
+			Fixed Ender Dragon Name
+
+			Fixed ThroatPos in wrong position
+
+			Zoom can no longer do X-rays
+
+			Fixed Water Dragon Amulet texture
+
+			Whistle left click doesn't work
+
+			Removed Circle Target and Follow Player Flying, these whistle commands are now reduced
+
+			Forest Now changes color per breed
+		DragonMounts2-1.12.2-1.6.2.jar:
+			Retextured the dragon scales
+
+			Retextured all the dragon armors
+
+			Forests now have an alternate color when on a desert biome
+
+			added albino textures
+
+			New Moonlight Armor
+
+			Moonlight is now back to breathing Ice
+
+			Added inventory sounds
+
+			New Dragon Bows
+
+			Fixed interact eating too much items
+
+			Dragons can carry more than 5 carriages
+
+			Added INFANT life stage
+
+			Added PREJUVENILE life stage
+
+			Dragons take longer to grow
+
+			Shift + right clicking a dragon egg entity turns it back to a block so that you can pick it up
+
+			baby dragons now follow their parents
+
+			baby dragons have their own baby sounds now (SO CUTE)
+
+			Armors have now their own special effects
+
+			Nests have their own config
+
+			Made Water Dragons spawn on water now
+
+			Fixed the head to be able to breathe at more distance
+
+			increased the damage based on range
+		DragonMounts.jar 1.6.1 BETA SNAPSHOT:
+			program is on alpha stages so the changelog might be incomplete. Note this version is buggy
+
+			Torohealth bug fixed
+
+			head pitch lock is attempting to be fixed
+
+			fixed the mod info to be cleaner
+
+			nests have their own rarity
+
+			new aether breath being reworked
+
+			most armor have special abilities with a cooldown
+
+			report on new bugs you find
+		DragonMounts-1.12.2-1.5.8(HOTFIX).jar:
+			FIX SOME SERVER ISSUES
+		DragonMounts-1.12.2-1.5.8.jar":
+			Fixed Shoulder Issues
+
+			Fixed Enchant Dragon Issues
+		DragonMounts-1.12.2-1.5.7 (HOTFIX).jar:
+			-added new lock and sit buttons in dragon gui
+			-lock allows and disallows others from using, riding your dragon
+			-changed dragon forest female textures for a bit
+			-forest textures now have been improved
+			-water armor has been changed
+			-made the tamed dragons land on players position
+			-added new dragon amulets to store dragons
+			-added gender stone for dragons to change genders
+			-nether dragon can now be obtained by placing an egg on the nether
+			-ice dragon damage buffed
+			-fire from dragons last shorter
+			-essence now stores the dragons inventory when a dragon dies
+			-mobs killed by breath no longer drop xp
+			-made fire nests and ocean nests rarer
+			-locked dragons cannot be touched by players
+			-made the boost faster
+			-new emerald dragon armor
+			-new water dragon armor textures
+			-new ender dragon armor textures and tools
+			-changed dragon armor textures
+			-leggings and boot rechanged for uniformity
+			-dragon dismounts now no longer hurt players
+			-banner disappearing bug fixed
+			-added bauble support
+			-dismounting dragons no longer hurt the player
+			-baby dragon can now shoulder ride players
+			-fixed categories for control settings
+			-made carriage hitbox slightly taller
+			-dragons no longer rotate its body while sitting
+			-esences are now 16 X 16
+			-fixed some recipes not working
+			-whistles now need enderpearls to craft because they can now teleport dragons
+			-ice now freeze only the top of the water ice doesnt melt underwater
+			-you can now carry hatchlings on your shoulders
+			-you can fly hatchlings while on your shoulder while wearing an elytra
+			-essences now drop on chests, immune to damage, and store your dragons items when dying
+			-fixed diamond shear wrong text info
+			-fixed dragon cant go to one layer blocks
+			-added russian tranlation thanks Kreatch!
+
+			-now requires 1.7.14 llibrary
+			-FIXED DRAGONS DISAPPEARING
+
+			-FIXED SERVER CRASHING
+
+	Eerie Entities (went from EerieEntities-1.12.2-1.0.6.jar to EerieEntities-1.12.2-1.0.7.jar):
+		EerieEntities-1.12.2-1.0.7.jar:
+			 * Custom pumpkins can now be used in recipes for pumpkin pie. - Tyler Hancock
+			 * Updated the minimum version for all dependencies. - Tyler Hancock
+			 * Removed an unused CraftTweaker dependency from the dev environment. - Tyler Hancock
+
+	Embers Rekindled (went from EmbersRekindled-1.12.jar to EmbersRekindled-1.13-hotfix2.jar):
+		EmbersRekindled-1.13-hotfix2.jar:
+			- Fixes test code in production
+		EmbersRekindled-1.13-hotfix.jar:
+			- Fixes Caminite Rings being possessed by some kind of demon
+
+			- Fixes JEI recipe errors on startup causing immense lag
+
+			- Adds missing lang entries
+
+			- Adds JEI integration for the Geologic Separator
+
+			- Adds a config for golem knockback resistance
+
+			- Adds configs for disabling the progression checklist stuff
+
+			- Possibly fixes some kind of AOPCD issue or whatever that mod is called
+		EmbersRekindled-1.13.jar:
+			- Adds Boiler and Steam Engine to Crafttweaker Integration
+
+			- Adds config options for Mini Boiler (Kurtchekov)
+
+			- Adds removeAll method to Crafttweaker Integration
+
+			- Adds a search feature to the Codex
+
+			- Adds a checklist feature to the Codex
+
+			- Adds Nickel, Tin and Aluminium Seeds.
+
+			- Adds a levelling system to Metal Seeds that increases their output the longer they've been growing for.
+
+			- Adds the Geologic Separator, a machine upgrade for the Melter, which collects extra molten metal output when melting ore.
+
+			- Adds the Caminite Valve, a Caminite Ring for a reservoir with 4 fluid io sides.
+
+			- Changes Blasting Core to deal explosive damage
+
+			- Changes Inferno Forge to not start when there is no ember available.
+
+			- Changes Codex entries to only show up when all ancestors have been checked off
+
+			- Changes Codex categories to only open when all prerequisite entries have been checked off
+
+			- Changes Ashen Armor to no longer break.
+
+			- Changes Codex connections to be directional.
+
+			- Fixes Shifting Scale hearts not showing up if Mantle is installed
+
+			- Fixes Shifting Scale hearts persisting even when no armor is worn (sometimes)
+
+			- Possibly fixes some render lag
+
+			- Fixes Ember Noise Offset being sent every tick instead of only when updated
+
+			- Fixes Mini Boiler sometimes not producing steam
+
+			- Fixes JEI performance issues in packs with many items (ichttt) (Huge thanks to this lad)
+
+			- Fixes Clockwork Tools accepting Mending and Unbreaking
+
+			- Fixes Fluid Pipe issues
+
+	EvilCraft (went from EvilCraft-1.12.2-0.10.70.jar to EvilCraft-1.12.2-0.10.77.jar):
+		EvilCraft-1.12.2-0.10.77.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.5.0 or higher.
+
+			Additions:
+			* Link to infobook Web version
+			[https://evilcraft.rubensworks.net/book/](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fevilcraft.rubensworks.net%252fbook%252f)
+			* Add registry exporters
+
+			Changes:
+			* Remove SideOnly client annotation from getSubItems
+
+			Fixes:
+			* Fix invalid crafting recipe tagging for display stands and undead bush
+		EvilCraft-1.12.2-0.10.76.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Allow regex vengeance spirit blacklist entries, Closes #576
+
+			Fixes:
+			* Fix fluids not being delegated in Display Stand, Closes #778
+			* Fix unsafe tile retrieval in BOEC light value calculation, Closes CyclopsMC/EvilCraft#777
+		EvilCraft-1.12.2-0.10.75.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix occasional division by zero crash when opening tank machines, Closes #776
+			* Fix Hardened Blood not being movable by pistons, Closes #774
+		EvilCraft-1.12.2-0.10.74.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Improve first input determination in blood infuser recipe handler
+			 Related to CyclopsMC/IntegratedCrafting#30
+			* Make JEI recipe wrapper type checking in categories stricter
+			 Related to CyclopsMC/IntegratedDynamics#717
+		EvilCraft-1.12.2-0.10.73.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Add bedrock to default blood stained block blacklist, Closes #771
+
+			Fixes:
+			* Fix lightning bombs duplicating when triggered by explosions, Closes #769
+		EvilCraft-1.12.2-0.10.72.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Reduce number of chunk-refreshing sendUpdate calls
+			 GUIs now make use of CyclopsCore's new synced gui variables
+			 CyclopsMC/CyclopsCore#40
+		EvilCraft-1.12.2-0.10.71.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Changes:
+			* Update to Forge 14.23.5.2768 and MCP snapshot_20180814
+			* Use cheaper method for checking if a config is enabled, CyclopsMC/CyclopsCore#116
+			* Make random value calls in libelle logic cheaper, Closes #763
+			* Update sv_se.lang
+
+	Expanded Equivalence (went from [1.12.2] Expanded Equivalence - 11b to [1.12.2] Expanded Equivalence - 12r):
+		[1.12.2] Expanded Equivalence - 12r:
+			Changes:
+
+			 * [ Added Mystical Agradditions support.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f3958f5bf5015ca9)
+			 * [ 12r. Rebuilt conversion system entirely. Some things may stop working.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f4cfe0e7086e6c65)
+			 * [ Fixed Actually Additions](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f9cf2fe994ca754c)
+			 * [ Updated dependencies](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f40e2f11ad5a0913)
+			 * [ Update to new HammerCore and ProjectE, added EnderIO and TechReborn.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f6d49f985bcb5ad5)
+			 * [ Start to make EnderIO compat...](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fZeitheron%252fExpandedEquivalence%252fcommit%252f6bb433c8bc9fade)
+
+	ExtraBotany (went from ExtraBotany-r1.1-52.jar to ExtraBotany-r1.1-55-fixed.jar):
+		ExtraBotany-r1.1-55-fixed.jar:
+			1. buff omniviolet
+
+			2. gaia3 and herrscher of the void will no longer clear liquid
+
+			3. true damage can be disabled in the config
+
+			4. increase the mana usage of the relics
+
+			5. minor bugs fixed
+
+			6. update zh_tw, ru_ru
+
+			7. better mana buffer performance
+
+			hotfixed:
+
+			1.nerf tinkle flower, buff bloody enchantress
+
+			2. void herrscher's summoned entities will no longer be pushed by water
+
+			3. void herrscher will destroy liquid when it teleports
+
+			4. gaia3 is no longer invisible
+
+			5. flux manafield can connect pipe without redstoneflux
+		ExtraBotany-r1.1-54.jar:
+			Balance:
+			Increase OmniViolet's output without increasing its overall production
+			Reduce Failnaught cast time
+			Holy Grenade 's stacksize 16 to 32
+			Failnaught has 5 melee dmg, Achilleshield has 6 melee dmg and Judah Oath has 12 melee dmg and half attack speed
+			Bloody Enchantress' temptation buff duration is decreased
+			Gaia III has 50 more health, lower frequency to cast special attacks
+			The rewards of reward bags 3 & 4 came down
+			Part of maid armors' effects require mana
+			Decrease all true dmg's weapons' true damage and increase their normal dmg
+			And more.
+
+			Fix:
+			Use dispenser to use hammer may cause crash
+			Holy Grenade costs 2 at one time
+			Herrscher NPE problem
+			The Trophy cant rotate
+
+			New:
+			New advancements
+			Ring of Mana Drive: supply mana to functional flowers nearby
+			Magic Finger: quickly transfer mana from you to the pool
+			Feather of JingWei: shoot aura fire with empty hands to defeat enemies
+			Necrofleur: deal high damage to creatures whose health is lower than 50%
+			Achilleshield has a new mode
+			Camera can affect boss with a shorter time
+			More documents
+		ExtraBotany-r1.1-53-fix.jar:
+			-Fix a server issue
+
+			-Fix serveral server issues.
+
+			-New Boss: Herrscher of The Void (you can disable its summon in config)
+			-New Cosmetic Baubles. Only cosmetic.
+			-New Advancements.
+			-A new category for lexicon, improve guidance, move most entries into the new category.
+			-Most flowers will show its range.
+			-Improve the performance of Bottled Star, Bottled Pixie, Excailibur, Camera and Origin Creation,
+			-Manalinkium support interdimensional mana transportation.
+			-First time you challenge gaia3, you will take 30% less damage.
+			-Decrease the reward of gaia3 by a little, because it is much easier now.
+			-The disarm whitelist of gaia3 is configurable now.
+			-The reward list of reward bags is configuarble now.
+			-You have more space to move when you are restricted by gaia3's skill.
+			-Fix gaia3 can be stuck in the boat.
+			-Fix the last holy grenade lost its effect.
+			-Fix liquifaction device still draw mana even it is full.
+			-Fix Bottled Flame place torch in wrong places.
+			-Fix some items' stacksize.
+			-Update ru_ru, thanks to theDirectorX
+
+	FTB Library (went from FTBLib-5.4.1.91.jar to FTBLib-5.4.3.130.jar):
+		FTBLib-5.4.3.130.jar:
+			 * Fixed toast rendering being broken sometimes - LatvianModder
+			 * Updated README.md - LatvianModder
+		FTBLib-5.4.3.129.jar:
+			No changelog provided.
+		FTBLib-5.4.3.127.jar:
+			 * Added minimum width to button list base gui - LatvianModder
+		FTBLib-5.4.3.126.jar:
+			 * Improved runLater(), no longer cancer code - LatvianModder
+		FTBLib-5.4.3.125.jar:
+			 * Added better tooltips in config GUI - LatvianModder
+			 * Added better helper methods in NameMap - LatvianModder
+			 * Added #hex number parsing in int config - LatvianModder
+		FTBLib-5.4.3.124.jar:
+			 * Fixed broken lists in config - LatvianModder
+		FTBLib-5.4.3.123.jar:
+			 * Data is now reverted from editing gui if it's cancelled - LatvianModder
+		FTBLib-5.4.3.122.jar:
+			 * Only read tile data if NBT tag isn't empty - LatvianModder
+		FTBLib-5.4.3.121.jar:
+			 * Replaced all team ID codes with string IDs - LatvianModder
+		FTBLib-5.4.3.120.jar:
+			No changelog provided.
+		FTBLib-5.4.3.118.jar:
+			 * Added ClientUtils#hasJavaFX(), support icon - LatvianModder
+		FTBLib-5.4.3.117.jar:
+			 * The final fix, thanks to @modmuss50 - LatvianModder
+		FTBLib-5.4.3.116.jar:
+			 * Even more fixes II! - LatvianModder
+		FTBLib-5.4.3.115.jar:
+			 * Even more fixes! - LatvianModder
+		FTBLib-5.4.3.114.jar:
+			 * Possibly fixed missing JavaFX issues. Need to figure out why this happens - LatvianModder
+		FTBLib-5.4.3.113.jar:
+			 * New fr_fr - Neerwan
+			 * Added IconRenderer, now to render as JavaFX Images, instead of AWT - LatvianModder
+		FTBLib-5.4.3.103.jar:
+			 * Fixed number rounding - LatvianModder
+		FTBLib-5.4.3.102.jar:
+			 * Fixed a YABBA bug - LatvianModder
+		FTBLib-5.4.3.101.jar:
+			 * Added EnumTristate.read/write - LatvianModder
+			 * Added search bar for Advancement list - LatvianModder
+			 * Added /list_advancements command - LatvianModder
+		FTBLib-5.4.3.100.jar:
+			 * Updated version - LatvianModder
+			 * Added CompactGridLayout - LatvianModder
+			 * Item selector now has search bar focused by default - LatvianModder
+			 * Added WrappedIngredient for ingredients that also want to display tooltip when hovered - LatvianModder
+			 * Added small Item Filters integration - LatvianModder
+			 * Improved JEI Integration, now supports JEI keybindings and bookmarks. Fixed panel scrolling - LatvianModder
+			 * Added BlankPanel, ColorWidget, ItemStackArrayHandler, partially implemented Panel scrolling without ScrollBar - LatvianModder
+			 * Changed ServerUtils.getDimensionName() to use dimension name from DimensionType when available - LatvianModder
+			 * Added Widget.tick() - LatvianModder
+		FTBLib-5.4.1.99.jar:
+			 * Improved regex of some methods a bit - LatvianModder
+		FTBLib-5.4.1.98.jar:
+			 * Fixed #78 for GuiContainerWrapper too - LatvianModder
+			 * Merge pull request #78 from xinyuan-liu/master - Kristi?ns Mic?tis
+			 * fix Chinese input - xinyuan-liu
+		FTBLib-5.4.1.97.jar:
+			 * Fixed crash with missing items - LatvianModder
+		FTBLib-5.4.1.96.jar:
+			 * Now the required Forge version is back to 14.23.5.2768 - LatvianModder
+			 * Fixed data loss issues. See [https://github.com/MinecraftForge/MinecraftForge/issues/5696](https://github.com/MinecraftForge/MinecraftForge/issues/5696) - LatvianModder
+		FTBLib-5.4.1.95.jar:
+			 * Replaced Patreon logo with Twitch - LatvianModder
+
+	FTB Quests (went from FTBQuests-1.5.1.136.jar to FTBQuests-1.7.2.189.jar):
+		FTBQuests-1.7.2.189.jar:
+			 * Re-added ability to use tasks as dependency types - LatvianModder
+		FTBQuests-1.7.2.188.jar:
+			 * Added "Disabled Completion Toast" config - LatvianModder
+			 * Updated README.md - LatvianModder
+		FTBQuests-1.7.2.187.jar:
+			 * Fixed screen recipes - LatvianModder
+			 * Fixed screen placement issues - LatvianModder
+		FTBQuests-1.7.2.186.jar:
+			 * Renamed favorites to pins, removed command, added button in gui instead - LatvianModder
+		FTBQuests-1.7.2.185.jar:
+			 * Added quest favoriting - LatvianModder
+		FTBQuests-1.7.2.184.jar:
+			 * Added Run as Player config for command rewards - LatvianModder
+		FTBQuests-1.7.2.183.jar:
+			 * Fixed auto-claim type being ignored in invisible chapters - LatvianModder
+		FTBQuests-1.7.2.182.jar:
+			 * Fixed item rewards not showing custom titles - LatvianModder
+		FTBQuests-1.7.2.181.jar:
+			 * Added observation task gui on screen, if timer is > 0s - LatvianModder
+			 * Added dependency completion status caching - LatvianModder
+		FTBQuests-1.7.2.180.jar:
+			 * Added observation task timer - LatvianModder
+			 * Added config options for JEI quest recipe plugin - LatvianModder
+		FTBQuests-1.7.2.179.jar:
+			 * Fixed barriers not working on servers, improved Auto-claim config of rewards - LatvianModder
+		FTBQuests-1.7.2.178.jar:
+			 * JEI Plugin hides invisible rewards and rewards with no ingredient - LatvianModder
+			 * Placing barrier against another barrier now copies it's ID - LatvianModder
+			 * Removed chapter caching - LatvianModder
+			 * Added Quest Barrier blocks - LatvianModder
+		FTBQuests-1.7.2.177.jar:
+			 * Fixed GameStages not syncing. Added "Remove" option to take away a stage - LatvianModder
+			 * Added text file loading from config/ftbquests/<mode>/text/<lang>/<id>.txt. You can add [title] and [icon] for any object and [description] and [text] for quests - LatvianModder
+		FTBQuests-1.7.2.176.jar:
+			 * Removed screen data caching - LatvianModder
+		FTBQuests-1.7.2.175.jar:
+			 * Fixed fluid tank again - LatvianModder
+		FTBQuests-1.7.2.174.jar:
+			 * Removed manual sync() method, added TaskData#setProgress(), addProgress(), optimized data transfer - LatvianModder
+		FTBQuests-1.7.2.173.jar:
+			 * Fixed server side crash - LatvianModder
+		FTBQuests-1.7.2.172.jar:
+			 * Another rewrite, fixed a bunch of bugs and cleaned up a lot of old code, moved editing to client side - LatvianModder
+		FTBQuests-1.7.1.171.jar:
+			 * Fixed repeated notifications - LatvianModder
+		FTBQuests-1.7.1.170.jar:
+			 * Added player detector, split detectors into their own block - LatvianModder
+		FTBQuests-1.7.1.169.jar:
+			 * Fixed chapters not auto-selecting properly - LatvianModder
+		FTBQuests-1.7.1.168.jar:
+			 * Fixed some crashes with the new tasks - LatvianModder
+		FTBQuests-1.7.1.167.jar:
+			 * Added block property matcher for observation and interaction tasks - LatvianModder
+			 * Fixed Interaction tasks working without checking for dependencies - LatvianModder
+		FTBQuests-1.7.1.166.jar:
+			 * Added Observation and Interaction Tasks - LatvianModder
+		FTBQuests-1.7.0.165.jar:
+			 * Added Custom Trigger Block to trigger Custom tasks (with NBT editor can also be used for other objects but its not recommended) - LatvianModder
+			 * Removed Variables - LatvianModder
+			 * Rewrote how rewards are synced - LatvianModder
+
+	FTB Utilities (went from FTBUtilities-5.4.0.87.jar to FTBUtilities-5.4.0.100.jar):
+		FTBUtilities-5.4.0.100.jar:
+			 * Updated links to new curseforge - LatvianModder
+			 * FTB Library changes - LatvianModder
+		FTBUtilities-5.4.0.99.jar:
+			No changelog provided.
+		FTBUtilities-5.4.0.98.jar:
+			 * Updated links for rank files - LatvianModder
+		FTBUtilities-5.4.0.97.jar:
+			 * FTB Library changes - LatvianModder
+			 * FTB Library changes - LatvianModder
+		FTBUtilities-5.4.0.96.jar:
+			 * Disabled JourneyMap integration by default - LatvianModder
+		FTBUtilities-5.4.0.95.jar:
+			 * Fixed #976 - LatvianModder
+			 * Added formatting in chat (has permission) - LatvianModder
+		FTBUtilities-5.4.0.94.jar:
+			 * Updated dependencies, re-added iChunUtil integration, fixed #974 - LatvianModder
+		FTBUtilities-5.4.0.93.jar:
+			 * Replaced forge login/logout events with FTBLib ones - LatvianModder
+			 * People with /rec enabled now have a red square next to their name in chat - LatvianModder
+		FTBUtilities-5.4.0.92.jar:
+			 * Reformatted after /back PR - LatvianModder
+			 * Merge pull request #968 from insufficientchocolate/tp_back - Kristi?ns Mic?tis
+			 * move warmup & cooldown permission into TeleportType - insufficientchocolate
+			 * fix TeleportTracker missing comma - insufficientchocolate
+			 * use snake_case nbt key - insufficientchocolate
+			 * wipe all telport logs if doesn't have infinit_back permission - insufficientchocolate
+			 * add default permissions - insufficientchocolate
+			 * implement compareTo of TeleportLog - insufficientchocolate
+			 * add TeleportTracker - insufficientchocolate
+			 * rename TeleportRecord -> TeleportLog - insufficientchocolate
+			 * make TeleportType carry permission node - insufficientchocolate
+			 * add back permission nodes - insufficientchocolate
+			 * replace lastDeath by lastTeleportRecord - insufficientchocolate
+			 * implement back to last teleport location - insufficientchocolate
+			 * move classes to separate files - insufficientchocolate
+			 * record teleport from teleport task - insufficientchocolate
+		FTBUtilities-5.4.0.91.jar:
+			 * Reformatted /ping PR - LatvianModder
+			 * Merge pull request #966 from insufficientchocolate/ping_command - Kristi?ns Mic?tis
+			 * Merge pull request #967 from Naxanria/master - Kristi?ns Mic?tis
+			 * RTP command improvements. - Naxanria
+			 * implement server pinger - insufficientchocolate
+			 * add ping commnad - insufficientchocolate
+			 * Updated progwml6 maven url to https - LatvianModder
+		FTBUtilities-5.4.0.90.jar:
+			 * In /dump_chunkloaders clicking on Chunks now teleports to center of them - LatvianModder
+		FTBUtilities-5.4.0.89.jar:
+			 * Added /dump_chunkloaders - LatvianModder
+		FTBUtilities-5.4.0.88.jar:
+			 * Updated guide link in ranks.txt - LatvianModder
+
+	FTB Utilities: Backups (went from FTBUtilitiesBackups-1.0.0.2.jar to FTBUtilitiesBackups-1.0.0.5.jar):
+		FTBUtilitiesBackups-1.0.0.4.jar:
+			 * /backup size now prints available storage and can parse TB - LatvianModder
+		FTBUtilitiesBackups-1.0.0.3.jar:
+			 * Merge pull request #7 from Sven792/patch-1 - Kristi?ns Mic?tis
+			 * Create de_de.lang - Sven
+
+	FastFurnace (went from FastFurnace-1.12.2-1.2.1.jar to FastFurnace-1.12.2-1.3.1.jar):
+		FastFurnace-1.12.2-1.3.1.jar:
+			Added a config option to not check caps when doing furnace outputs.
+		FastFurnace-1.12.2-1.3.0.jar:
+			LXGaming: Fix sponge compat and reintroduce vanilla cook time decrease behavior when smelting cannot continue.
+		FastFurnace-1.12.2-1.2.3.jar:
+			BWM Compat: FastFurnace will now disable itself when BWM is installed with HCFurnace enabled. The same improvements are present, just the really annoying error will no longer show up.
+		FastFurnace-1.12.2-1.2.2.jar:
+			Fixes furnace losing contents when being rotated.
+
+	FastWorkbench (went from FastWorkbench-1.12.2-1.6.1.jar to FastWorkbench-1.12.2-1.7.2.jar):
+		FastWorkbench-1.12.2-1.7.2.jar:
+			Fixes a very specific dupe bug.
+		FastWorkbench-1.12.2-1.7.1.jar:
+			Fixed a bug where shift click crafting would continue if the recipe changed.
+		FastWorkbench-1.12.2-1.7.0.jar:
+			Added an experimental improvement to the way shift-click crafting works. This should further increase performance, but can be disabled in the config file if anything bad will happen.
+
+			Any users disabling this feature should report an issue to the github regarding why they had to disable it.
+
+			Also, this version may break expectations of mods that implement FastWorkbench. They can set ContainerFastBench#useNormalTransfer to true to disable this behavior for specific container instances.
+
+	FoamFix for Minecraft (went from FoamFix 0.10.3 (1.12.2) to FoamFix 0.10.5 (1.12.2)):
+		FoamFix 0.10.5 (1.12.2):
+			0.10.5 is a critical bugfix release for 0.10.4, whose changelog is as follows:
+
+			Additions:
+
+			 * [#183] API interface for efficiently forcing mob spawner activation without fake players or extra coremodding
+			Bugs fixed:
+
+			 * [#183] Add workaround to mob spawner cache tweak for PneumaticCraft: Repressurized
+
+	Hammer (Lib) Core (went from [1.12.2] Hammer Core - 2.0.4.2 to [1.12.2] Hammer Core - 2.0.4.7):
+		[1.12.2] Hammer Core - 2.0.4.7:
+			Changes:
+
+			 * [ Fix GuiWTFMojang!](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ffedc32f1ae50332)
+			 * [ Update README.MD](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb1d1ece903cef7)
+			 * [ 47th build. A little cleanup, added IWitherProofBlock.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc9475514a4ea8c7)
+			 * [ Because... Mojang.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f25c34888dd40409)
+			 * [ Add scissors, image helper, more drawing methods. Removed unused code.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fde1fbd1231ec57f)
+			 * [ Fixed #81...](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
+			 * [ Fixed #90 and #93](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
+			 * [ Changes to client methods, recipe registry fixes.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+		[1.12.2] Hammer Core - 2.0.4.6:
+			Changes:
+
+			 * [ Because... Mojang.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f25c34888dd40409)
+			 * [ Add scissors, image helper, more drawing methods. Removed unused code.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fde1fbd1231ec57f)
+			 * [ Fixed #81...](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
+			 * [ Fixed #90 and #93](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
+			 * [ Changes to client methods, recipe registry fixes.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+		[1.12.2] Hammer Core - 2.0.4.5:
+			Changes:
+
+			 * [ Add scissors, image helper, more drawing methods. Removed unused code.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fde1fbd1231ec57f)
+			 * [ Fixed #81...](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
+			 * [ Fixed #90 and #93](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
+			 * [ Changes to client methods, recipe registry fixes.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+		[1.12.2] Hammer Core - 2.0.4.4:
+			Changes:
+
+			 * [ Fixed #81...](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f5ef49841597510f)
+			 * [ Fixed #90 and #93](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f628fd78c6ccbf8f)
+			 * [ Changes to client methods, recipe registry fixes.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252ff065e8ac61d50a6)
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+		[1.12.2] Hammer Core - 2.0.4.3:
+			Changes:
+
+			 * [ Shrunk symbols, ported configs, optimised and added few things here and there](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc5e4b1c8e731c76)
+			 * [ Fixed #85](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fd726a8f10dd5153)
+			 * [ Shaded OKHTTP3, OKIO and IO.Socket libraries.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fc86b7d701c05062)
+			 * [ Added part rendering](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f00b8bdf508bdd6d)
+			 * [ Added langs](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0b91c2213a93c21)
+			 * [ Added item rendering on the fly, fixed transport session send to all.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f2b60ee8708f1ca0)
+			 * [ Added ItemStack renderer](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f0de8eebfd8dda8f)
+			 * [ 2.0.3.2](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f13c9dd2e00c2894)
+			 * [ Buch 'o' tweaks and GIF image decoder.](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252feb9cd6cf2ad7fa1)
+			 * [ Improvements to manual, remove duplicate IndexedMap](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252f817f8fc3245affe)
+			 * [ Removed quite a few unused features, removed caching and ASM file saving](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgitlab.com%252fDragonForge%252fHammerCore%252fcommit%252fb2743ebbef8e9c2)
+
+	Incorporeal (went from incorporeal-1.0.4.jar to incorporeal-1.1.4.jar):
+		incorporeal-1.1.4.jar:
+			Fix more crash bugs (Cygnus crashing in multiplayer, another infraredstone crash)
+		incorporeal-1.1.3.jar:
+			Fix strange crashes related to InfraRedstone compatibility being enabled.
+		incorporeal-1.1.2.jar:
+			* Some internal cleanups.
+
+			* Add more decorative blocks.
+
+			* Add slabs and stairs for all the decorative blocks.
+
+			* Unstable Cubes now chime at you!
+		incorporeal-1.1.1.jar:
+			Fix crash on servers, sorry about that!
+		incorporeal-1.1.0.jar:
+			oof
+
+			- Some little bug fixes.
+
+			- Cygnus items are now craftable through Skytouching. Still no lexica docs, sorry :S
+
+			 - Skytouching is crafttweakable (check github wiki)
+
+			 - Skytouching appears in JEI
+
+			- Minor overhaul of Soul Cores - they now use mana. Read the book and play around with them for a bit.
+
+			- Add the Blood Soul Core, which transfers potion effects to you (at mana cost.)
+
+			- Add missing documentation for Unstable Cubes and make a few minor text fixes.
+
+			- Add two new decorative blocks? I guess?
+
+	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.8.jar to IntegratedDynamics-1.12.2-1.0.18.jar):
+		IntegratedDynamics-1.12.2-1.0.18.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.5.0 or higher.
+
+			Additions:
+			* Link to infobook Web version
+			[https://integrateddynamics.rubensworks.net/book/](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fintegrateddynamics.rubensworks.net%252fbook%252f)
+			* Add registry exporters
+
+			Changes:
+			* Add keybinding infobook appendix localization
+			* Properly implement getTranslationKey on ItemPart
+		IntegratedDynamics-1.12.2-1.0.17.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix oredict recipe item input quantities being lost, Closes #752
+			* Fix crash when applying more variables than an operator can accept
+			 This can be required in complex currying situations
+			 where variables that don't fit into the inputs of one operator
+			 should be delegated to the resulting operator.
+			 Closes #754
+			* Gracefully throw an evaluation error when building infinite operators, Closes #755
+		IntegratedDynamics-1.12.2-1.0.16.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix performance issue when importing/exporting in IT
+			 Closes CyclopsMC/IntegratedTunnels#170
+			* Add type check when using combined operators with operators, Closes #749
+		IntegratedDynamics-1.12.2-1.0.15.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Additions:
+			* Expose slotted ingredient networks
+			 This significantly improves performance when external handlers are
+			 interacting with networks, such as hoppers inserting or extracting
+			 items.
+			 Closes CyclopsMC/IntegratedTunnels#167
+
+			Fixes:
+			* Fix ingredients duping when externals are interacting with IT interfaces
+			 Fixes dupe bug with Thermal Expansion Item Allocator
+			 Closes CyclopsMC/IntegratedTunnels#169
+			* Fix counting in infinite lists causing infinite loop and crashing, Closes #748
+			* Fix LP list creation incorrectly remembering values after deselecting, Closes #739
+			* Improve Named and Uniquely Named value type categories, Closes #741, Closes #742
+			* Fix mechanical machines not working if internal energy buffer too small
+			 Even if there is a valid energy network available., Closes #743
+			* Set default ingredientNetworkObserverFrequencyForced to 0
+			 This fixes a problem where IT networks would not get re-indexed
+			 by AE2 storage terminals.
+			 This requires a config reset!
+			 Related to CyclopsMC/IntegratedTunnels#166
+		IntegratedDynamics-1.12.2-1.0.14.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Properly pass network instance to ticking parts
+			 This may resolve problems with networks being corrupted in parts.
+			 Related to #720
+			* Fix part settings gui showing side field dropdown behind other inputs
+			 Closes CyclopsMC/IntegratedTunnels#164
+			* Resolve Z-fighting on writers that are placed next to each other
+			 Closes #105
+			* Fix networks never working when energy consumption is enabled
+			 This was caused by the energy network never getting indexed.
+			 Closes #731
+		IntegratedDynamics-1.12.2-1.0.13.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Make mod compat operator names more consistent
+			 Related to CyclopsMC/IntegratedDynamics#591
+			* Improve text alignment inside Logic Programmer, Closes #591
+		IntegratedDynamics-1.12.2-1.0.12.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Additions:
+
+			Changes:
+			* Improve first input determination in recipe handlers
+			 Related to CyclopsMC/IntegratedCrafting#30
+			* Clarify Reader dependency in Redstone Writer advancement
+			 Closes #713
+			* Add check for list proxies that have a missing default constructor, #721
+
+			Fixes:
+			* Make JEI recipe wrapper type checking in categories stricter
+			 Closes CyclopsMC/IntegratedDynamics#717
+			* Fix broken texture when silk touching logic programmer, Closes #728
+			* Fix fluid-based recipes matching with all fluids
+			 Closes CyclopsMC/IntegratedCrafting#28
+			* Allow all items to be inserted into mechanical machines
+			 This fixes problems with insertion order of ingredients
+			 in Integrated Crafting causing crafting errors, Closes #29
+			* Fix all list value proxies that have no default constructor
+			 This could cause a lot of log spam when list were being used
+			 with partially applied operators.
+			 Closes #721
+			* Fix crash on operator pipes with invalid second operators
+			 Closes CyclopsMC/IntegratedTunnels#160
+		IntegratedDynamics-1.12.2-1.0.11.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Fixes:
+			* Fix labels sometimes not syncing anymore to clients
+			 This was caused by labels sometimes becoming null.
+			 This commit fixes that problem,
+			 and includes a fix for existing null labels
+			 Closes #712
+			* Fix crash when rendering non-item-based recipes
+		IntegratedDynamics-1.12.2-1.0.10.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.1 or higher.
+
+			Changes:
+			* Reduce number of chunk-refreshing sendUpdate calls, CyclopsMC/CyclopsCore#40
+			* Only send mechanical machine tile data to clients when gui is open
+			 This significantly reduces lag when machines
+			 are actively working in the background.
+			 Closes #630
+		IntegratedDynamics-1.12.2-1.0.9.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Changes:
+			* Update to Forge 14.23.5.2768 and MCP snapshot_20180814
+			* Use cheaper method for checking if a config is enabled, CyclopsMC/CyclopsCore#116
+
+			Fixes:
+			* Fix variable store causing chunks to be always loaded, Closes #705
+			* Fix wilcard chan interaction breaking after interface channel is changed
+			* Fix storage interactions not causing an immediate sync, Closes CyclopsMC/IntegratedTerminals#25
+
+	Integrated Tunnels (went from IntegratedTunnels-1.12.2-1.6.7.jar to IntegratedTunnels-1.12.2-1.6.10.jar):
+		IntegratedTunnels-1.12.2-1.6.10.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.4.0 or higher.
+
+			Fixes:
+			* Improve handling of inconsistent simulation-mode transfer failures
+
+			 No more console warning will be logged.
+			 Instead, the error will be shown in the respective part.
+
+			 Items will be emitted into the world (disableable),
+			 and other ingredient types will be voided
+			 upon such errors.
+
+			 Parts will now go in error-mode once such an error occurs
+			 to avoid ingredients continuously going lost.
+
+			 Related to #169
+		IntegratedTunnels-1.12.2-1.6.9.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Fixes:
+			* Make interface state target lookup safer in unloaded chunks
+			 This could cause crashes when used on SpongeForge servers.
+			 Related to #165
+			* Fix positions being enabled again while they were disabled
+			 Potential fix for stack overflow error in self-referencing network.
+			 CyclopsMC/IntegratedDynamics#734
+		IntegratedTunnels-1.12.2-1.6.8.jar:
+			As always, don't forget to backup your world before updating!
+			Requires CyclopsCore version 1.1.0 or higher.
+
+			Changes:
+			* Update to Forge 14.23.5.2768 and MCP snapshot_20180814
+
+			Fixes:
+			* Fix performance issue when handling tunnel cache, Closes CyclopsMC/IntegratedDynamics#707
+			* Fix incorrect interface position being signaled on network add/remove
+
+	Item Filters (went from ItemFilters-1.0.1.8.jar to ItemFilters-1.0.3.12.jar):
+		ItemFilters-1.0.3.12.jar:
+			 * Now the required Forge version is back to 14.23.5.2768 - LatvianModder
+		ItemFilters-1.0.3.11.jar:
+			 * Added PaintAPI, IPaintable - LatvianModder
+		ItemFilters-1.0.2.10.jar:
+			No changelog provided.
+		ItemFilters-1.0.2.9.jar:
+			 * Fixed data not being reset with null shared tag - LatvianModder
+			 * Updated progwml6 maven url to https - LatvianModder
+
+	Just Enough Energistics (JEE) (went from JustEnoughEnergistics-1.12.2-1.0.6.jar to JustEnoughEnergistics-1.12.2-1.0.7.jar):
+		JustEnoughEnergistics-1.12.2-1.0.7.jar:
+			Improved JEI recipe transfer item prioritization
+
+	Just Enough Items (JEI) (went from jei_1.12.2-4.15.0.269.jar to jei_1.12.2-4.15.0.287.jar):
+		4.15.0:
+			* Fix #1635 Bookmark button leaks color state on hover
+			* Fix #1621 Enchanted book tooltip compatibility with other mods
+			* Fix #1611 Rare crash when cycling items
+			* Updated Polish translation (#1610)
+			* Fix #1576 Unable to view IE Metal Press recipes
+			* Fix typo in French localization (#1593)
+			* Updated Polish translation (#1587)
+			* Fix #1567 Fix #1575 Improve display of wildcard items with no creative menu subtypes
+			* Add warning log when a mod GUI does not draw the dark background layer
+			* Update French Localization (#1557)
+			* Make defensive copies of gui exclusion areas to prevent a bug when they are mutated
+			* Fix #1549 Add support for Forge IRarity for item tooltip colors
+			* Fix #1518 Add support for Crafttweaker removing brewing recipes
+			* Update sv_se.lang (#1535)
+			* Updated Polish translation (#1533)
+			* Add shortcut key for item edit/hide mode (#1530)
+			* Fix #1524 RecipeCategory tabs are not always sorted properly
+			* Fix #1523 Recipe transfer button texture issues with transparency
+			* Update to latest Forge in dev
+			* Fix #1507 Memory is wasted by UID cache after loading
+			* Close #1491 Add API to get ingredients hovered in the bookmark overlay
+			* Fix #1482 Enchanted Books not being hidden
+			* Fix renamed recipe background texture
+			* Fix #1497 Rename recipe_background to avoid texture name conflict (sorry texture pack devs)
+			* Reduce memory used by anvil recipe wrappers
+			* Fix #1473 Avoid posting texture stitching events from JeiTextureMap
+			* Fix #1471 Remove texture pack sizing restrictions
+			* Fix #1472 Crash when using recipe transfer into astral sorcery table
+			* Fix #1464 Recipe transfer into Artisan Worktables voids items (#1466)
+			* Update pt_br.lang (#1469)
+			* Automatic code style reformatting
+			* Revert "Pass a null player to getTooltip (#1388)" This reverts commit e20c3a588c20e41b44794b1909b11c7c840a497b.
+			* Simplify texture scaling
+			* Show multiple columns of recipe catalysts when there are too many for one column
+			* Fix #1463 Improve custom texture map to work with scaled resource packs
+			* Move bookmarks out of the way of the recipe book
+			* Fix #1412 Shift-clicking recipe into a Slice'N'Splice can void items
+			* Update de_de.lang (#1461)
+			* Update ja_jp.lang (#1458)
+			* Fix recipe transfer button transparency
+
+	Just Enough Resources (JER) (went from JustEnoughResources-1.12.2-0.8.9.48 to JustEnoughResources-1.12.2-0.9.2.60):
+		JustEnoughResources-1.12.2-0.9.2.60:
+			[[1ca8376](https://github.com/way2muchnoise/JustEnoughResources/commit/1ca83769a2ee4d439b8fdda422b98677ebd6c929)] fix villager trades, fixes #190 (way2muchnoise)
+			 [[19cda79](https://github.com/way2muchnoise/JustEnoughResources/commit/19cda79bfc40b330f3e8e20084b43346c04bf4f5)] switch to openjdk for travis (way2muchnoise)
+		JustEnoughResources-1.12.2-0.9.2.58:
+			[[58039dd](https://github.com/way2muchnoise/JustEnoughResources/commit/58039dd33943a2fe0e03b2e4209730c7e736c3ee)] bump version (way2muchnoise)
+			 [[f25ff2c](https://github.com/way2muchnoise/JustEnoughResources/commit/f25ff2caa877d62b192b1e85269d0a5014405fd0)] fix duplicate lang id, fixes #183 (way2muchnoise)
+		JustEnoughResources-1.12.2-0.9.1.57:
+			[[52718d9](https://github.com/way2muchnoise/JustEnoughResources/commit/52718d97d0f21150f8cae6debae8bd4254bfa665)] show correct trade level, #165 (way2muchnoise)
+			 [[bd44a2a](https://github.com/way2muchnoise/JustEnoughResources/commit/bd44a2aea12a7d9224a06b9c008008b997493d9b)] add more info to exception with villagers, #185 (way2muchnoise)
+			 [[4836b9c](https://github.com/way2muchnoise/JustEnoughResources/commit/4836b9c356ae14771c1c6156526d6b5bbe9836d4)] prevent recipecategory (un)hiding null pointers, #189 and #181 (way2muchnoise)
+		JustEnoughResources-1.12.2-0.9.1.56:
+			[[53bcd7c](https://github.com/way2muchnoise/JustEnoughResources/commit/53bcd7c66fb66b40a006009f6ca0b68af4aaa4f7)] Allow the plant registry to accept soils. (#187) (way2muchnoise)
+		JustEnoughResources-1.12.2-0.9.0.53:
+			[[75edca8](https://github.com/way2muchnoise/JustEnoughResources/commit/75edca80187d9a5ea6d71a6d292913d68026ec1d)] fixes #180 (way2muchnoise)
+		JustEnoughResources-1.12.2-0.9.0.52:
+			[[8a47ab7](https://github.com/way2muchnoise/JustEnoughResources/commit/8a47ab7b8b06d70012bd7e103412f87d6b649260)] update cursegradle (way2muchnoise)
+			 And more but the build system messed up the push on the original commit
+			 See following github diff for all changes [[684d755de40f...62080210d105](https://github.com/way2muchnoise/JustEnoughResources/compare/684d755de40f...62080210d105)]
+		JustEnoughResources-1.12.2-0.8.10.50:
+			[[684d755](https://github.com/way2muchnoise/JustEnoughResources/commit/684d755de40fe579d80c25bf0fe0f1a776c68075)] apply current translation to scissor, fixes #155 (way2muchnoise)
+		JustEnoughResources-1.12.2-0.8.10.49:
+			[[5968b7a](https://github.com/way2muchnoise/JustEnoughResources/commit/5968b7ae83bca2c11c7afac68566519b2815c67e)] add mob id to pack dev data option, fixes #157 (way2muchnoise)
+
+	LLibrary (went from LLibrary 1.7.18 to LLibrary 1.7.19):
+		LLibrary 1.7.19:
+			* Optimize entity property tracking system (@Shadows-of-Fire)
+
+	LibrarianLib (went from librarianlib-1.12.2-4.15.jar to librarianlib-1.12.2-4.19.2):
+		librarianlib-1.12.2-4.19.2:
+			Fix spongeforge compatibility
+
+			Fix issue with nulls in arrays when deserializing NBT and ByteBuffers
+
+			Improve the way extravariants work
+		librarianlib-1.12.2-4.19.1-release.jar:
+			No changelog provided.
+		librarianlib-1.12.2-4.18.jar:
+			Reverted some internal changes that caused crashes in Wizardry
+		librarianlib-1.12.2-4.17.jar:
+			Significant overhaul: Several systems internally are completely different.
+
+	Mantle (went from Mantle-1.12-1.3.3.42.jar to Mantle-1.12-1.3.3.55.jar):
+		Mantle-1.12-1.3.3.55.jar:
+			* Made PulseManager::isPulseLoaded case insensitive
+
+			* Allow PulseManager::isPulseLoaded to check if pulses from other Mantle mods are loaded, instead of just the same mod
+
+			* Added static PulseManager::isPulseLoadedGlobal, checks if a pulse is loaded without a PulseManager instance. Can be used by ModuleFileRepository to instantiate without a pulse manager
+
+			* ModuleFileRepository sections now support attaching a module dependency to pages instead of just sections
+		Mantle-1.12-1.3.3.49.jar:
+			 * Fixed extra hearts not bouncing during regen
+			 * Scroll wheel support for books
+			 * Book and multiblock fixes
+
+	McJtyLib (went from McJtyLib - 1.12-3.1.1 to McJtyLib - 1.12-3.5.4):
+		McJtyLib - 1.12-3.5.4:
+			 - Fixed a problem when receiving packets from the client where it would sometimes process things on the wrong thread
+		McJtyLib - 1.12-3.5.3:
+			 - Added withRotation() to BaseBlock making all McJtyLib based blocks rotatable
+			 - Osmium0001 added a way to copy/paste selections in all McJtyLib textfields (use shift arrow keys to make selections)
+			 - Osmium0001 fixed logging for McJtyLib so it is tagged with the correct mod
+		McJtyLib - 1.12-3.5.2:
+			 - Small change for HoloGui
+		McJtyLib - 1.12-3.5.1:
+			 - Small change for Ariente
+		McJtyLib - 1.12-3.5.0:
+			 - Major changes to how mods using McJtyLib are structured. Preparations for 1.13/1.14 porting
+			 - 1.13 like config system
+			 - 1.13 like networking system
+			 - New methods for rendering quads and general API cleanup in the RenderHelper
+			 - New multipart system (currently only used by Ariente)
+
+	Metal Chests (went from Release v4.0.1 to Release v6.1.0):
+		Release v6.1.0:
+			[https://github.com/T145/metalchests/releases/tag/v6.1.0](https://github.com/T145/metalchests/releases/tag/v6.1.0)
+		Release v5.8.9:
+			[https://github.com/T145/metalchests/releases/tag/v5.8.9](https://github.com/T145/metalchests/releases/tag/v5.8.9)
+		Release v5.8.1:
+			PLEASE READ:
+
+			[https://github.com/T145/metalchests/releases/tag/v5.8.1](https://github.com/T145/metalchests/releases/tag/v5.8.1)
+
+	Mod Name Tooltip (went from 1.10.0 to 1.10.1):
+		1.10.1:
+			Created Polish translation
+
+	ModTweaker (went from modtweaker-4.0.16 to modtweaker-4.0.17):
+		modtweaker-4.0.17:
+			Thaumcraft salis mundus support
+
+			Thermal Expansion coolant
+
+			Thermal Expansion Factorizer
+
+			Thanks Kindlich for all of these!
+
+	More Overlays (went from moreoverlays-1.14-mc1.12.2.jar to moreoverlays-1.15.1-mc1.12.2.jar):
+		moreoverlays-1.15.1-mc1.12.2.jar:
+			 * Fixed: Region files actually store 32 by 32 Chunks
+			 * Fixed: Region offset at negative chunk coordinates
+			 * Fixed: Region filename doesn't render sometimes
+		moreoverlays-1.15.0-mc1.12.2.jar:
+			 * Updated Forge to 14.23.5.2768
+			 * Updated JEI to 4.15.0.268
+			 * Added ability to search for EnchantmentData (JEI results contain EnchantmentData if you search for enchanted books, More Overlays can now also use that to search for enchanted tools)
+			 * Added Region Overlay as 4th option to chunk overlays with support for CubicChunks (thanks to Foghrye4)
+			 * Added support for DrZharks Custom Mob Spawner (thanks to xs2007 and chickenbones)
+			 * Added config option to ignore mobs spawn list for light overlay (disables the Custom Mob Spawner integration and stops checking biome spawn list)
+			 * Changed item search to use JEI Subtype interpreter for NBT matching (Fixes some issues with wrong results for Items that use NBT)
+			 * Changed: Item search will now also work in the creative inventory
+			 * Changed version system to semantic versioning (needed for ports to newer minecraft versions)
+			 *
+			 *
+			 *
+
+	Mowzie's Mobs (went from Mowzie's Mobs - 1.5.3 to Mowzie's Mobs - 1.5.4):
+		Mowzie's Mobs - 1.5.4:
+			+New falling block particles for geomancy effects
+
+			*Fix naga spawning on server crash
+
+			*Fix geomancy tunneling on server crash - ability still does not work properly, but at least the crash is gone
+
+	Mystcraft (went from mystcraft-1.12.2-0.13.7.02.jar to mystcraft-1.12.2-0.13.7.04.jar):
+		mystcraft-1.12.2-0.13.7.04.jar:
+			[Teleport] Mystcraft now uses the vanilla Entity.changeDimension function when linking between dimensions
+			 This should improve mod interplay and allow entities to use their custom teleport code
+			[Teleport] Mystcraft should do a more robust job of teleporting mount/rider configurations
+
+			[Advancements] Add advancement for traveling to a Mystcraft dimension while carrying a linking book
+			[Advancements] Improve structuring; hide non-advancements
+		mystcraft-1.12.2-0.13.7.03.jar:
+			[Compat] Matches Minecraft's feature locater handling for nether fortresses ("Fortress")
+
+			[Admin] Adds button to link modifier block to mark age as "dead" for recycling
+
+			(Thanks to HellFirePvP for the below fixes and improvements)
+			[Bugfix] Fixes Intra-Linking-Only not functioning at all
+			[Bugfix] Explosions occasionally crashing on dedicated servers
+			[Bugfix] Fixes Player-permissions being lost after teleporting using Mystcraft
+			[Bugfix] Fixes the dynamic book container not accounting container changes due to environmental changes
+			[Bugfix] Fixes advanced lake generator wrongly checking for blocks
+			[Bugfix] Fixes crystal formations not spawning
+			[Bugfix] Fixes broken "End" Terrain rule
+			[Bugfix] Fixes tooltips on writingdesk displaying minecraft:air for empty slots
+			[Bugfix] Fixes page tooltips on the bookbinder not showing up at all
+			[Bugfix] Fixes mystcraft archivist villagers not being acted upon with items on sneaking
+
+			[Performance] Auto-blacklist gaseous fluids from generating as fluids
+			[Performance] Improve generation performance on Skylands-Terrain worlds
+
+			[Compat] Require more recent Forge version to prevent certain issues
+
+			[API] Added IPrimerFilters to ITerrainAlteration to filter the ChunkPrimer during terrain generation
+
+	Mystic World (went from MysticWorld-1.12.2-1.2.0.jar to MysticWorld-1.12.2-1.3.2.jar):
+		MysticWorld-1.12.2-1.3.2.jar:
+			Changes
+
+			- Checks are now in place for structures being placed inside of villagers. SO hopefully that fixes that!
+
+			- Aubergines are now in Mystic World!
+
+			- There are now Aubergine Sprouts
+		MysticWorld-1.12.2-1.3.1.jar:
+			1.3.1
+
+			- Prevent recipes with invalid outputs being created when certain configuration optiosn (dusts, ingots, etc) are disabled.
+
+			- Add configuration option to debug ore generation.
+		MysticWorld-1.12.2-1.3.0.jar:
+			- Aubergines and all sorts of aubergine related foods.
+
+			- Amethyst ore and tools
+
+			- SPROUTS
+
+	Mystical Agradditions (went from MysticalAgradditions-1.12.2-1.3.1.jar to MysticalAgradditions-1.12.2-1.3.2.jar):
+		MysticalAgradditions-1.12.2-1.3.2.jar:
+			Release 1.3.2 for MC 1.12.2
+
+			Changes:
+
+			 * Fixed a crash with the latest Mystical Agriculture (1.7.5)
+
+	Mystical Agriculture (went from MysticalAgriculture-1.12.2-1.7.3.jar to MysticalAgriculture-1.12.2-1.7.5.jar):
+		MysticalAgriculture-1.12.2-1.7.5.jar:
+			Release 1.7.5 for MC 1.12.2
+
+			Changes:
+
+			 * Added a config option to disable the Ultimate Seed Reprocessor
+			 * This fixes an issue where disabling the Ultimate Furnace would break things
+
+	Mystical Mechanics API (went from Mystical Mechanics-0.5.jar to Mystical Mechanics-0.10.jar):
+		Mystical Mechanics-0.10.jar:
+			- Fixes axles syncing rotation from the wrong side
+		Mystical Mechanics-0.9.jar:
+			- Fixes configs not generating
+		Mystical Mechanics-0.8-hotfix.jar:
+			- Adds missing recipe for the Archaic Converter
+		Mystical Mechanics-0.8.jar:
+			- Added BWM compatibility
+
+			- Added IHasRotation for syncing up axle rotation
+		Mystical Mechanics-0.7.jar:
+			- Adds Iron Fan
+
+			- Adds Creative Tab
+		Mystical Mechanics-0.6.jar:
+			- Adds The One Probe support
+
+			- Huge amount of fixes for edge cases. (Big thanks to Dryxen for more than half of these)
+
+			- Gearboxes and Axles can now be rotated
+
+			- Gearboxes can now be placed backwards if sneaking
+
+			- Gearboxes no longer split to disabled gears/gears with no output
+
+			- Fixes Mergeboxes staying on. (Dryxen)
+
+			- Fixes gears sometimes disappearing. (Dryxen)
+
+	Mystical Wildlife (went from mysticalwildlife-1.12.2-1.2.0.jar to mysticalwildlife-1.12.2-1.3.0.jar):
+		mysticalwildlife-1.12.2-1.2.2.jar:
+			 * FIXED: Crash when spawns of some mobs are disabled in biomes where they would be no other spawns (reported by Ghostrider231)
+		mysticalwildlife-1.12.2-1.2.1.jar:
+			 * ADDED: Russian translation by goro-hypnos
+
+	MysticalLib (went from mysticallib-1.12.2-1.1.1.jar to mysticallib-1.12.2-1.3.1.jar):
+		mysticallib-1.12.2-1.3.1.jar:
+			1.3.1
+
+			- Fixed flipped operation (addition instead of subtraction) that was inflating the damage output of knives. They should now be 1 less than swords as intended.
+		mysticallib-1.12.2-1.3.0.jar:
+			Anything roots 3 needs is in this version.
+		mysticallib-1.12.2-1.2.1.jar:
+			Fixed major crash on servers
+		mysticallib-1.12.2-1.2.0.jar:
+			Updated for blockcraftery base classes, including baked models for doors, trapdoors and pressure plates.
+
+	Natural Pledge (went from NaturalPledge-r3.0.2.jar to NaturalPledge-r3.1.2.jar):
+		NaturalPledge-r3.1.2.jar:
+			Rebalance the Waystone to be less crazy on servers
+
+			Fix a visual glitch where the ragnarok armors appeared to grant 2x the armor they actually did
+		NaturalPledge-r3.1.1.jar:
+			Nerf several potentially OP features of the mod
+		NaturalPledge-r3.1.jar:
+			Fix several more port issues
+		NaturalPledge-r3.0.4.jar:
+			 Fix several issues with the original port
+		NaturalPledge-r3.0.3.jar:
+			Fix several crashes with LibLib
+
+	Nature's Aura (went from NaturesAura-r14.jar to NaturesAura-r17.jar):
+		NaturesAura-r17.jar:
+			 * Fixed issues with OptiFine because of the AuraChunk capability
+			 * Added a height limit for the roots of Ancient Trees to prevent crashes over the void
+			 * Added a blacklist for ores that won't be generated by the ore generation powder
+			 * Fixed the ore generation powder sometimes misrecognizing blocks as ores
+			 * Fixed a rare crash with Patchouli visualization for the ritual of the forest
+			 * Added russian translation (kellixon)
+		NaturesAura-r16.jar:
+			 * Fixed the projectile generator crashing when colliding with a projectile that doesn't generate any aura
+			 * Fixed OptiFine causing an exception when joining a world for the first time after starting the game
+		NaturesAura-r15.jar:
+			 * Added the Shooting Mark, an aura generator that uses projectiles
+			 * Added the Aura Trove, an upgraded Aura Cache
+			 * Added the World Eye, a chunk loader (that can be disabled in the config)
+			 * Added the Rails of the Worlds that can teleport minecarts between dimensions
+			 * Added recipes for coal and water to the conversion catalyst
+			 * Visually overhaul the mystical magnifier so that you can sneak-right-click to clear visualizations
+			 * Allow the aura attraction cart to move aura between dimensions
+			 * CraftTweaker compat: Removed the domain from recipe names, [click here](https://github.com/Ellpeck/NaturesAura/blob/master/CraftTweakerCompat.md#on-the-importance-of-recipe-names) to see an example
+
+	Ore Excavation (went from OreExcavation-1.4.137.jar to OreExcavation-1.4.140.jar):
+		OreExcavation-1.4.140.jar:
+			Added the ability to stage shape mining separately
+
+	Patchouli (went from Patchouli-1.0-18.jar to Patchouli-1.0-20.jar):
+		Patchouli-1.0-20.jar:
+			- Fixed a bunch of different crashes.
+			- Fixed disabling advancement locking breaking the order of entries
+			- Fixed rendering an item changing the color of further things rendered.
+		Patchouli-1.0-19.jar:
+			- Added blocky_font to book.json, to use the blocky vanilla font rather than the thin one. (Ellpeck)
+
+			- Fixed recipes changed with CraftTweaker not reflecting in books. (Ellpeck)
+
+	Placebo (went from Placebo-1.12.2-1.5.1.jar to Placebo-1.12.2-1.6.0.jar):
+		Placebo-1.12.2-1.6.0.jar:
+			Added new patreon cosmetic loader, in preparation for the full launch of my patreon later this year or something.
+			[https://www.patreon.com/Shadows_of_Fire](https://www.patreon.com/Shadows_of_Fire) (Still WIP).
+
+	ProjectE (went from ProjectE-1.12.2-PE1.4.0.jar to ProjectE-1.12.2-PE1.4.1.jar):
+		ProjectE-1.12.2-PE1.4.1.jar:
+			###Version 1.12.2-PE1.4.1
+			* NOTICE: When reporting issues on the tracker please be sure to tag them as 1.12
+			* NEW: Mapper support for Recipe Stages
+			* NEW: Rounding up or down when Covalence Loss results in a value less than 1 EMC can now be configured
+			* NEW: EMC storage items can now be used as extra storage for the transmutation GUI when placed in input slots
+			* FIXED: Flight permission quirks when switching gamemodes
+			* FIXED: Collector fuel upgrades stopping if fuels have the same EMC value
+			* FIXED: Duplicated items in the transmutation GUI
+			* CHANGE: Internal EMC handling fully converted to Longs
+			* CHANGE: The Mercurial Eye has been improved. For more info see pull request 1824
+
+	Psi (went from Psi-r1.1-72.jar to Psi-r1.1-77.jar):
+		Psi-r1.1-77.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-77](http://psi.vazkii.us/changelog.php#r1.1-77)
+		Psi-r1.1-76.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-76](http://psi.vazkii.us/changelog.php#r1.1-76)
+		Psi-r1.1-75.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-75](http://psi.vazkii.us/changelog.php#r1.1-75)
+		Psi-r1.1-74.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-74](http://psi.vazkii.us/changelog.php#r1.1-74)[](http://psi.vazkii.us/changelog.php#r1.1-73)
+		Psi-r1.1-73.jar:
+			See [http://psi.vazkii.us/changelog.php#r1.1-73](http://psi.vazkii.us/changelog.php#r1.1-73)
+
+	Quark (went from Quark-r1.5-146.jar to Quark-r1.6-174.jar):
+		Quark-r1.6-174.jar:
+			- Automation: Fixed Pistons Move TEs causing a memory leak if you switch dimensions a lot.
+			- Management: Fixed Shulker Box Item Adding being broken.
+			- Misc: Fixed Enderman not teleporting away from Pickarangs.
+			- World: Baby Foxhounds now have a big head, as they should.
+			- World: Fixed crabs trying to jump while walking underwater, which got them stuck.
+		Quark-r1.6-173.jar:
+			- Client: Added shiny animals to the random animal skins feature. (1 in 1024 chickens, cows, or pigs will be shiny and have a variant skin)
+			- World: Fixed foxhounds not being classified as hostile mobs for some cases.
+			- World: Foxhounds now only spawn if the light level is low.
+			- World: Lowered the default foxhound spawn rate by a lot. If you already loaded the game with the old config you'll have to go into the foxhounds section in the quark config and reset it to default.
+		Quark-r1.6-172.jar:
+			- General: Fixed a ton of log spam from an inconsequential mistake in the ASM code.
+			- Automation: Fixed iron rods not being able to break blocks that pistons normally break. Ironic, I know.
+			- Automation: Fixed the Up, Down, and All Around mod not allowing you to bounce in quark slimes.
+			- Automation: Fixed weird inductor behaviour.
+			- Client: Added a config option to change the opacity of the invalid slots overlay.
+			- Client: Improved the render for showing invalid slots.
+			- Tweaks: Fixed the "Night has Passed" message showing up even if you disable the improved sleeping feature.
+			- World: Fixed crabs and stonelings not breathing underwater.
+			- World: Fixed crabs swimming even thought they shouldn't.
+			- World: Fixed Foxhounds trying to murder you in peaceful difficulty.
+			- World: Soul beads now take a little bit of time to consume.
+			- World: Stonelings will now alert nearby stonelings if startled.
+		Quark-r1.6-171.jar:
+			- Automation: Fixed chains not rendering.
+			- Decoration: Fixed leads in fences having weird behaviour if they're on different chunks.
+			- Vanity: Fixed emotes not cancelling properly when another one starts.
+			- World: Fixed Foxhounds sleeping and waking up instantly.
+			- World: Fixed Foxhounds and Frogs suffocating easily.
+			- Automation: Fixed colored slime having an awkward recipe registration because another module overrides it.
+			- Decoration: Fixed grates pushing items around when they fall through them.
+			- Automation: Fixed iron rods disappearing if they're pushed with a block in the middle
+		Quark-r1.6-170.jar:
+			- Automation: Fixed pistons destroying blocks.
+			- Automation: Fixed slime sticking to slime it shouldn't be able to stick to if it's directly in front.
+			- Decoration: Fixed items not going through grates.
+			- World: Fixed a crash with Foxhounds.
+		Quark-r1.6-169.jar:
+			- General: Add tab-complete to the Quark Config command.
+			- General: Added a config to set piston push limit.
+			- General: Added an overwrite of vanilla's piston logic to allow for quark (and potential addons) to do some spicy stuff.
+			- General: Added new sound effects to a bunch of things around the place.
+			- General: Improved the textures/models of a few items and blocks.
+			- General: Quark dispenser behaviors no longer dispense the item if they fail.
+			- Automation: Added Chain Linkage.
+			- Automation: Added Color Slime.
+			- Automation: Added Gravisand.
+			- Automation: Added the Redstone Inductor.
+			- Automation: Ender Chests are now hard blacklisted for pistons. I mean, they're *obsidian!*
+			- Automation: Fix animals not eating floor food. Again. Again.
+			- Automation: Fix certain render issues with Pistons Push Tile Entities.
+			- Automation: Iron Rods no longer pretend they're solid blocks on all sides.
+			- Automation: Iron Rods will now works with slime blocks, and also when there's an amount of blocks that's larger than the push limit in front of them.
+			- Automation: Pistons now render more correctly when they push tile entities.
+			- Building: Added Jasper and Slate support to World Stone Bricks and Pavement.
+			- Building: Vanilla Slabs, Stairs, and Walls now supports Moss Stone and Mossy Stone Bricks.
+			- Client: Fix a render issue with Render Items In Chat.
+			- Client: Fix food tooltips being oddly shifted while looking in JEI and being in the creative search tab. Weird, I know.
+			- Client: Fixed enchanted books showing items crashing the game if you hover over a book with an invalid enchant.
+			- Decoration: Added Decorated Paper Lamp variants.
+			- Decoration: Added Decorated Paper Walls as a new variant.
+			- Decoration: Added Iron Grate.
+			- Decoration: Added Rope.
+			- Decoration: Added support for the new trees to Leaf Carpet.
+			- Decoration: Added the ability to place Blaze Rods.
+			- Decoration: Fixed a desync with flower pots.
+			- Decoration: Fixed More Banner Layers being broken.
+			- Management: Fixed an item dupe with mods that allow shulker boxes to stack.
+			- Management: Fixed Linking Items not working.
+			- Management: Fixed opening the game making a desync between your held item in the server and client.
+			- Management: Fixed rotating arrow types trying to do the thing even if you only have one type of arrow.
+			- Management: Trapped chests no longer go into boats. Boat chests also wobble with their boat.
+			- Misc: Added Reacharound Placement.
+			- Misc: Fixed a crash with ender dragon breath throwing.
+			- Misc: Fixed a small visual bug in a secret feature.
+			- Misc: Fixed the Pickarang not moving its drops perfectly.
+			- Misc: Invalid Ancient Tomes no longer appear in creative or JEI.
+			- Misc: Mining Fatigue potions can accept redstone and glowstone to upgrade them. (Previously, you could only get upgraded versions by corrupting the upgraded Haste equivalent.)
+			- Misc: Pickarangs no longer hurl themselves into the uncaring void when they return to a dead player.
+			- Misc: Placing dusts has a placement sound.
+			- Misc: Poison Potatoes no longer visually decrease their stack size when the entity is already poisoned.
+			- Misc: You can now dispense Dragon's Breath.
+			- Oddities: Added Tiny Potato.
+			- Oddities: Backpacks no longer can dupe items through specific interactions.
+			- Oddities: Candles can now influence which enchantments Matrix Enchanting will give you.
+			- Oddities: Pipes now render stack sizes appropriately.
+			- Tweaks: Added the ability to shovel dirt blocks into path.
+			- Tweaks: Fixed right click harvest not marking the harvest as a success, thus causing some weird effects in mods like Inspirations.
+			- Tweaks: Improved Improved Sleeping chat feedback.
+			- Tweaks: Look Down Ladders now makes it so that if you're sneaking when you open your chat, you'll stay sneaking. Looking down overrides the sneak-lock, so you can still use GUIs while going down a ladder.
+			- Tweaks: Villagers no longer will respond to doors being broken while trying to open them by annihilating the universe.
+			- Vanity: Allow item names to be dyed with non-vanilla dyes.
+			- Vanity: Fixed sitting in stairs while spamming the sneak key causing you to teleport and have some graphical issues.
+			- World: Added Broken Nether Portals spawning in the nether.
+			- World: Added Cobbedstone to Spider Nest Underground Biomes.
+			- World: Added Crabs, Crab Legs, Crab Shell Fragments, and Potion of Stability.
+			- World: Added Foxhounds.
+			- World: Added Jasper and Slate Speleothems.
+			- World: Added Jasper and Slate stones to Revamp Stone Gen.
+			- World: Added Nether Obsidian Spikes.
+			- World: Added Tree Variants, which include Blossoming Trees and Swamp Oak Trees.
+			- World: Buried Treasure can no longer spawn off of its map.
+			- World: Cave Crystals can be crafted into Sheets (panes).
+			- World: Cave Crystals have better beacon colors.
+			- World: Cave Crystals now come in black!
+			- World: Change some food values to be closer to what was intended.
+			- World: Changed the default biomes for some of the Revamp Stone Gen settings to better accommodate Jasper and Slate.
+			- World: Crystal Cave generation is able to be configured in much more depth.
+			- World: Curse can now be dispelled with milk.
+			- World: Curse now lasts 10 minutes rather than 20 by default.
+			- World: Fixed multiple more secret features we can't mention here.
+			- World: Fixed monster boxes crashing if you set the min monster count to be higher than the max monster count (bruh)
+			- World: Soul Beads now let you know they'll apply Curse to you.
+			- World: Stonelings no longer just wait around when they can't find a way to escape.
+			- World: Stonelings now path over cactus, since they have no fear.
+			- API: Added INonSticky and ICollateralMover for the new piston stuff.
+		Quark-r1.5-168.jar:
+			- Client: Items now render when sent in chat.
+			- Client: Visual Stat Display now applies to potion items.
+			- Decoration: Iron Ladders no longer are broken by water.
+			- Management: Added Arrow Scrolling. Sneak-scrolling while holding a bow will rotate the positions of arrows in your inventory.
+			- Misc: Added a Horse Whistle. This lets you call your horse to you, within a given range.
+			- Misc: Fix Ancient Tomes acting as if they were enchanted, instead of like enchanted books.
+			- Misc: Pickarangs got an aesthetic overhaul, getting sound effects and lots of flair.
+			- Oddities: Matrix Enchanting has been rebalanced, giving you no duplicate enchantments.
+			- Tweaks: Added Right Click Harvesting. If Hoe Harvesting is enabled, hoes can harvest larger areas than your bare hand.
+			- Tweaks: Archaeologists now follow emerald and bone blocks.
+			- World: Added Frogs. They're cute, spawn in swamps, are bred using spider eyes or raw fish, and can be used for brewing jump boost.
+			- World: Curse no longer affects players in spectator mode.
+			- World: Floors can now be set to be entirely water when generating underground biomes.
+			- World: Stonelings are now better at spotting players in tight environments.
+		Quark-r1.5-167.jar:
+			- Client: Added items rendering in chat.
+			- Experimental: Added an option to reject mods.
+			- Management: Fixed Better Craft Shifting not working properly.
+			- Oddities: Matrix Enchanting will no longer give you more enchants that you can use.
+			- Tweaks: Fixed Ladder Drop Down not working properly.
+			- World: Fixed liquids not spawning properly in underground biomes.
+			- World: Fixed the Pickarang taking damage even if it doesn't hit anything.
+			- World: Improved the consistency of Pickarang item pickup.
+		Quark-r1.5-166.jar:
+			- General: Fixed a hang when leaving a world.
+			- Client: Fixed improved vanilla textures not loading sometimes.
+			- Client: Fixed the shulker box tooltip.
+			- Decoration: Fixed donkeys with quark chests not dropping the right items.
+			- Decoration: Fixed paper walls connecting to leaves.
+			- Decoration: Paper blocks now burn a lot.
+			- Experimental: Frogs no longer take fall damage and have their eye height set properly.
+			- Management: Fixed the management button keybinds not being bindable to mouse buttons.
+			- Misc: Using poisionous potatoes on animals gives some feedback if it misses.
+			- Oddites: Fixed some more weird backpack behaviours.
+			- Oddities: Fixed a crash with the totem of holding.
+			- Tweaks: Fixed slab to block recipes not always working because of chiseled block variants.
+			- Tweaks: Improved sleeping now rounds down player count and no longer spams your chat.
+			- World: Fixed the brimstone underground biome obsidian chance config being outside of where it should be.
+		Quark-r1.5-165.jar:
+			- Automation: Fixed iron rod connection logic.
+			- Client: Fixed an attribute display bug.
+			- Decoration: Fixed a Lead dupe.
+			- Decoration: Fixed donkeys not accepting quark chests.
+			- Decoration: Fixed item frames disappearing into the ether if there's a lot of blocks above them.
+			- Decoration: Fixed wooden button variants not being smeltable.
+			- Management: Item linking now fires chat events for bots and the like.
+			- Misc: Changed the calculation for effiency on the pickarang.
+			- Misc: Fixed the pickarang killing itself if you have no space in your inventory for it.
+			- Misc: The pickarang no longer has a cooldown in creative mode.
+			- Tweaks: Fixed being able to place floating ladders under weird circumstances.
+			- Tweaks: Fixed vanilla ladder placement logic applying if dropping down a ladder isn't possible.
+			- Vanity: Fixed emote icons not appearing when holding an item.
+		Quark-r1.5-164.jar:
+			- General: Fixed patron emotes not working again.
+			- General: Fixed some loot tables not registering properly.
+			- Automation: Fixed the default config for animals eating floor foor being too conservative with the max amount of mobs in an area.
+			- Client: Fixed stat display not working with some languages.
+			- Misc: Fixed the Pickarang not dropping everything it should.
+			- Misc: Pickarangs can now be enchanted by Efficiency, which makes them faster.
+			- Oddities: Fixed slight z-fighting with the backpack model.
+			- World: Brought back the percentage based chance configs.
+			- World: Made sprouts edible.
+			- World: Monster boxes are now much harder to break.
+		Quark-r1.5-163.jar:
+			- Building: Fixed some wooden blocks not burning.
+			- Oddities: Fixed backpacks eating items.
+			- World: Reverted the change to configs to use percentage based odds which broke old configs.
+		Quark-r1.5-162.jar:
+			- General: Fixed crash when opening the beacon, again.
+			- Client: Fixed a crash with the usage ticker.
+			- Experimental: Added Custom Splashes.
+			- Management: Fixed chest buttons rendering under Cosmetic Armor items, again.
+			- Oddities: Fixed pipe animation bug.
+		Quark-r1.5-161.jar:
+			- General: Changed some "chance" configs to use percentage rather than 1-in-X.
+			- General: Fixed crash when opening a beacon.
+			- Management: Fixed Chest Buttons rendering below items from Cosmetic Armor.
+			- Vanity: Fixed patron emotes not working.
+			- World: Added a dimension config to quark dungeons.
+			- World: Fixed log spam with the Archaeologist Hat.
+		Quark-r1.5-160.jar:
+			- Experimental: Added Better Nausea, which attempts to make nausea not give the player motion sickness.
+			- Misc: Fixed an exploit with botania mana enchanting.
+			- Misc: Fixed using modded potion effects with the beacon replacement feature resulting in the wrong sprites being drawn.
+			- Tweaks: Fixed the recipe book shopwing up in the crafting table even if the config to disable it is on.
+			- World: Fixed some items on stonelings z-fighting.
+			- World: Fixed the Pickarang bypassing region claims.
+			- World: Fixed Wraiths being able to be spawned as babies.
+		Quark-r1.5-159.jar:
+			- Client: Fixed debug messages in the log with enchanted books.
+			- Client: Fixed Enchanted Books not showing items added by mods in their tooltip
+			- Decoration: Fixed Iron Ladders not sounding like iron.
+			- Tweaks: Fixed Quark's config to disable the recipe book breaking Patchouli's book button.
+			- Vanity: Fixed other players' emotes leaking.
+			- Vanity: Fixed patreon only emotes being usable by non patrons.
+			- Vanity: Fixed sitting in BlockCraftery stairs having weird behaviour.
+			- World: Added a config to add more sounds to wraiths.
+			- World: Fixed Stonelings intercepting actions taken on them even if nothing happens.
+		Quark-r1.5-158.jar:
+			- World: Fixed compatibility with Ore Stone Variants. You can now have quark stone clusters and ore stone variants.
+		Quark-r1.5-157.jar:
+			- Automation: Fixed wolves eating food off the ground breeding even if not at full hp.
+			- Client: Added the ability to add custom items to the enchantment book toolip.
+			- Client: Fixed adding mod items to the enchantment book tooltip not working.
+			- Decoration: Fixed a crash when untying leashes.
+			- Misc: Added a config option to not add the slime bucket as an oredicted slimeball.
+			- Tweaks: Fixed a milk bucket dupe.
+			- Tweaks: Fixed hoe harvesting not supporting mod blocks.
+		Quark-r1.5-156.jar:
+			- General: Fixed a crash with JEI.
+			- Client: Fixed items blinking at the wrong time sometimes.
+			- Management: Fixed a crash with desynced shulker boxes.
+			- Tweaks: Tamed wolves can now be pat by shift-right clicking with an empty hand.
+			- World: Archaeologists now say when they're out of stock.
+			- World: Stonelings can now be named.
+		Quark-r1.5-155.jar:
+			- Client: Fixed the item expiry feature causing Botania mana tablets to not render.
+			- Experimental: Improved wednesday.
+			- Management: Fixed the favorite icon being wrong.
+			- Oddities: Fixed a dupe with backpacks.
+			- Oddities: Fixed backpacks eating up items.
+			- Oddities: Tweaked pipe hitboxes a bit.
+			- World: Fixed Basalt not working with chisel.
+			- World: Stonelings no longer use the monster spawn table.
+		Quark-r1.5-154.jar:
+			- General: Fixed bad ASM leading to a startup crash.
+		Quark-r1.5-153.jar:
+			- General: Fixed a server crash.
+			- General: Tried to fix Chisel compatibility again.
+			- Building: Added carved variants for world stone bricks.
+			- Client: Fixed the Highlight Invalid Slots feature highlighting the wrong position in the Tinkers Construct Crafting Station.
+			- Decoration: Added the ability to tie leads to fences.
+			- Decoration: Fixed Flat Item Frames not extending their model when non vanilla maps are placed in them.
+			- Experimental: Added Framed Blocks.
+			- Experimental: Added wednesday.
+			- Management: Fixed right click to add to shulkers not working.
+			- Misc: Added the Pickarang.
+			- Oddities: Fixed a dupe with backpacks.
+			- Oddities: Fixed pipes accepting items if they're disabled.
+			- Oddities: Fixed some model weirdness with pipes.
+			- Tweaks: Added Springy Slime.
+			- Tweaks: Fixed Improved Sleeping not sending the list of sleeping players to chat.
+			- World: Added a config option to make stonelings run away if the player moves quickly even if sneaking.
+			- World: Added brick variants for Permafrost and Brimstone.
+			- World: Fixed a tiling issue with Limestone Bricks.
+			- World: Fixed cave roots spawning in dimensions other than the overworld.
+			- World: Fixed Stonelings crashing the game when put in an EnderIO Powered Spawner.
+			- World: Fixed tamed Stonelings being able to despawn.
+			- World: Fixed underground features spawning in superflat worlds.
+			- World: Stonelings are now immune to cactus, arrows, drowning, and fall damage.
+			- World: Stonelings can now be fed stone types to change their look.
+			- World: Stonelings can now be tamed with Diamonds.
+			- World: Stonelings now have a sound effect on damage.
+			- World: Stonelings now have Basalt and Marble variants.
+		Quark-r1.5-152.jar:
+			- Management: Fixed a crash when opening the player's inventory under certain circumstances.
+		Quark-r1.5-151.jar:
+			- General: Added a proper AutoRegLib dep so people know to use the proper version.
+			- General: Added proper subtitles to quark's sound effects.
+			- General: Fixed Chisel Compatibility not working properly.
+			- Client: The slot the player is hovering over is no longer highlighted for the invalid slots feature.
+			- Client: The Usage Ticker is now a bit smarter at figuring out which items to show.
+			- Client: Upgraded the abilities of Visual Stat Display, it can now display a ton more attributes.
+			- Experimental: Added a debug feature to dump the texture atlas.
+			- Management: Fixed a crash when opening the inventory.
+			- Oddities: Fixed fake client side Totems of Holding showing up.
+			- Oddities: Fixed pipes rendering incorrectly in some modpack setups.
+			- Oddities: Open ended pipe ends now have a new model to show they have special properties.
+			- Oddities: Upgraded pipes with the ability to succ in items that go onto them.
+			- Tweaks: Fixed ladders being used up if used on a ladder at the bottom of the world.
+			- Vanity: Fixed Chests in Boats vanishing on the client.
+			- Vanity: Fixed emote rows being flipped.
+			- Vanity: Witch hats now make witches ignore you.
+			- World: Added Monster Boxes to underground cave generation.
+			- World: Added the Stoneling mob, and its drop, the Heart of Diamond.
+			- World: Fixed the Archeologist Hat destroying items if you break some blocks.
+		Quark-r1.5-150.jar:
+			- General: The required forge version is now properly marked as a depedency.
+			- Automation: Fixed piston pushing being weaker than intended.
+			- Client: Improved rendering for the invalid slot highlight and made it not show slots that are disabled.
+			- Client: The feature to show invalid slots now requires shift to be held by default.
+			- Decoration: Axes now break paper walls faster.
+			- Decoration: Blacklisted botania functional flowers from being placed in flower pots because they can't handle the complex nature of them.
+			- Management: Fixed trying to saddle a hippocampus from the Ultimate Unicorn crashing.
+			- Oddities: Fixed an animation bug with pipes, again.
+			- Oddities: Pipes now shoot out items if they were to leave the pipe.
+			- Vanity: Custom emotes can now have sounds.
+			- Vanity: Custom emotes can now move the entire player model at once.
+			- Vanity: Emotes can now be cancelled by starting a new emote.
+			- Vanity: Tweaked the emote GUI a bit.
+
+	Refined Storage (went from Refined Storage 1.6.12 to Refined Storage 1.6.15):
+		Refined Storage 1.6.15:
+			 * Fixed recipes with more than 1 bucket of fluid not transferring from JEI (Darkere)
+			 * Fixed oredict crafting patterns redefining recipes (Darkere)
+			 * Fixed Portable Grids not keeping their enchantments when placed (Darkere)
+			 * Shortened crafting text for the Russion translation to fix Grid overlays (yaroslav4167)
+			 * Fixed JEI hotkeys not working on fluid filter slots (raoulvdberge)
+			 * Fixed crash when opening Crafter Manager with FTB Quests installed (raoulvdberge)
+			 * GregTech Community Edition Wires and Machines are now banned from rendering on Refined Storage patterns because they are causing crashes (raoulvdberge/Darkere)
+			 * Fixed a bug where the container slots weren't synced when opening a Grid (raoulvdberge)
+		Refined Storage 1.6.14:
+			 * Fixed server crash (raoulvdberge)
+		Refined Storage 1.6.13:
+			 * Fixed Interface with Crafting Upgrade being stuck if an earlier item configuration has missing items or fluids (raoulvdberge)
+			 * Added keybindings to open wireless items. The default one set to open a Wireless Crafting Grid from Refined Storage Addons is CTRL + G (raoulvdberge)
+			 * Added Grid quantity formatting for item counts over 1 billion (raoulvdberge)
+			 * Updated German translation (cydhra)
+			 * Updated Chinese translation (KoderX)
+			 * Fixed wrong item count for oredict patterns (the-eater)
+			 * Fixed autocrafting duplication bug (Radviger / notcake)
+			 * Fixed Crafting Pattern not rendering tile entity items like a chest (zhykzhykzhyk / raoulvdberge)
+			 * Let Constructor and Destructor interact with world using their owner's profile (Radviger)
+
+	Refined Storage Addons (went from Refined Storage Addons 0.4.3 to Refined Storage Addons 0.4.4):
+		Refined Storage Addons 0.4.4:
+			 * Refined Storage 1.6.13 compatibility (raoulvdberge)
+
+	Refined Storage: Requestify (went from refinedstoragerequestify-1.12.2-1.0.1-2.jar to refinedstoragerequestify-1.12.2-1.0.2-3.jar):
+		1.0.2:
+			* Updated to a newer Refined Storage API, closes #7 (Buuz135)
+
+	Rustic (went from rustic-1.1.0.jar to rustic-1.1.1.jar):
+		rustic-1.1.1.jar:
+			 * Fixed a crash caused by placing lattice next to grape leaves
+			 * Fixed pathfinding issues with wildberry bushes and lattice
+			 * Fixed console spam from oredict registration failures
+			 * Fixed wildberry bushes generating underwater and breaking immediately (I think)
+			 * Added oredict entry for raw slate as "stoneSlate"
+			 * Added some more oredict entries for honeycomb
+
+	Rustic Thaumaturgy (went from Rustic Thaumaturgy v4.3 to Rustic Thaumaturgy v4.4a):
+		Rustic Thaumaturgy v4.4a:
+			Fixes Brass Sconces not able to unlock in Thaumonomicon
+		Rustic Thaumaturgy v4.4:
+			Added Korean Translation (thanks cs8minty!)
+
+	Shadowfacts' Forgelin (went from Forgelin-1.8.2.jar to Forgelin-1.8.3.jar):
+		Forgelin-1.8.3.jar:
+			 * Update Kotlin to 1.3.40 and Coroutines to 1.2.1 (thanks to NikkyAI for doing all the work)
+
+	Shotguns & Glitter (went from shotgunsandglitter-1.5.jar to shotgunsandglitter-1.6.jar):
+		shotgunsandglitter-1.6.jar:
+			 * Added config option to disable turrets from targetting passive mobs
+			 * Added config option to tweak turret radius
+			 * Added config option to blacklist mobs from being targetted by the turret
+			 * Added config option to blacklist certain bullet and grenade effects
+			 * The turret now uses the furnace burn time from the fuel instead of just consuming an unit of it.
+			 * Magazines and drums are now present in the Creative Tab
+			 * All block damaging effects now respect the mobGriefing gamerule
+			 * Update LibLib 4.18
+			 * Bumped minimum forge version to 2768
+
+	Singularities (went from Singularities-1.12.2-2.3.2.jar to Singularities-1.12.2-2.4.1.jar):
+		Singularities-1.12.2-2.4.1.jar:
+			Added russian translation
+		Singularities-1.12.2-2.4.0.jar:
+			General cleanup of mod internals. Should run a bit better now.
+			Fixes compressor switching recipes when receiving new inputs while processing a recipe.
+			Fixes compressor consuming ANY items as valid for the current recipe.
+
+	Soot (went from Soot-1.5.jar to Soot-1.6.jar):
+		Soot-1.6.jar:
+			Bugfix Portion of the Update
+
+			- (Hopefully) Fixes a crash related to hashmaps
+
+			- Fixes and reworks the Alchemical Mixer
+
+			- Fixes Witchburn visual sometimes sticking around after death
+
+			- Changes Witchburn from a potion effect into an attribute
+
+			- Changes Mundane Stones to apply their bonus gradually
+
+			- Fixes Alchemy Dials being horribly broken
+
+			- Converts UUID strings into actual UUIDs. (nooby)
+
+			- Adds config option for sulfur generation
+
+			- Adds Alchemical Mixer documentation.
+
+	Soul Shards Respawn (went from SoulShardsRespawn-1.12.2-1.1.0-12.jar to SoulShardsRespawn-1.12.2-1.1.1-13.jar):
+		SoulShardsRespawn-1.12.2-1.1.1-13.jar:
+			Version 1.1.1:
+
+			- Fixed a crash on Sponge
+			 - See [https://git.io/fjXz1](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fgit.io%252ffjXz1) for more information
+
+	Stone Crafting Table (went from StoneCraftingTable-1.12.2-1.0.2.jar to StoneCraftingTable-1.12.2-1.0.3.jar):
+		StoneCraftingTable-1.12.2-1.0.3.jar:
+			Added Sunekaer's [PR](https://github.com/p455w0rd/StoneCraftingTable/commit/a283c9728c28c08181d9ba4b6d7bc0e5ab062e99).
+
+	TOP Addons (went from topaddons-1.12.2-1.10.1.jar to topaddons-1.12.2-1.11.0.jar):
+		topaddons-1.12.2-1.11.0.jar:
+			v1.12.2-1.11.0
+
+			 *  Added Mystical Agriculture support (#62)
+			 * Seed tier
+			 * Reprocessor fuel level
+			 * Made Forge Addon respect showTankSetting for TOP fluid gauge (#61)
+			v1.12.2-1.10.1
+
+			 * [Roost] Server-friendly chicken name and stats (#60)
+			v1.12.2-1.10.0
+
+			 * [ArchitectureCraft] Ported to 1.12 (#59)
+			 * [Roost] Added support (#58)
+			v1.12.2-1.9.2
+
+			 * [StorageDrawers] Display client-localized itemstack name. (#57)
+			v1.12.2-1.9.1
+
+			 * [MooFluids] Move client world reference out of entity render (#56)
+			v1.12.2-1.9.0
+
+			 * Re-add ic2-classic check (#55)
+			 * [UCW] Added variation tooltip to UCW Proxy Blocks (#54)
+			v1.12.2-1.8.0
+
+			 * [TiCon] Remove drying rack progress
+			 * [Forestry] Fix NPE when fluid is disabled in Forestry config. Fixes #52.
+			 * [BM] Port to 1.12.2
+			v1.12.2-1.7.0
+
+			 * [SC] Refactor field name in cage element. Fixes #50.
+			 * [Lycanites] Update to 1.20 (Elementals)
+			v1.12.2-1.6.0
+
+			 * Rustic crop support (#47)
+			 * Update mods
+			 * CoFH version update and refactor. Fixes #48.
+			v1.12.2-1.5.0
+
+			 * [Binnie's] Correct growth percentage for hops (#45)
+			v1.12.2-1.4.0
+
+			 * Ported Ice&Fire support
+			 * Update Lycanite's Mobs addon
+			 * Add config option to disable storage drawer override
+			 * Fix double extended info when extendedInMain is true. (#44)
+			 *
+			Create zh_cn language file (#42)
+
+			 * Create zh_cn.lang
+			 * Translated using Weblate (Chinese (Simplified))
+			Currently translated at 85.0% (97 of 114 strings)
+
+			Translation: Mod/TOPAddons Translate-URL: [http://weblate.sayori.pw/projects/mod/topaddons/zh_cn/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fweblate.sayori.pw%252fprojects%252fmod%252ftopaddons%252fzh_cn%252f)
+
+			 * Translated using Weblate (Chinese (Simplified))
+			Currently translated at 97.3% (111 of 114 strings)
+
+			Translation: Mod/TOPAddons Translate-URL: [http://weblate.sayori.pw/projects/mod/topaddons/zh_cn/](https://www.curseforge.com/linkout?remoteUrl=http%253a%252f%252fweblate.sayori.pw%252fprojects%252fmod%252ftopaddons%252fzh_cn%252f)
+
+			 * Moofluids support (override entity render)
+			v1.12.2-1.2.1
+
+			 * Remove binnie dependency in ObjectHolder. Fixes #40.
+			v1.12.2-1.2.0
+
+			 * Update gradle wrapper, changelog plugin
+			 *  Binnie's Mods support
+			 * Genetics/Extra Trees machine progress
+			 * Botany flowers and soil
+			 * Thermal Expansion & Thermal Dynamics support
+			 * Tank color refactor & cleanup
+			 * Implemented json recipes
+			 * Thermal foundation fluid colours
+			v1.12.2-1.1.3
+
+			 * Update for forestry 204+ refactor (#38)
+			v1.12.2-1.1.2
+
+			 * Fix recipe book crash (#37)
+			 * Updated FUC.json
+			v1.12.2-1.1.1
+
+			 * Fix ic2 dependency in advgenerators. (Curseforge comment 49)
+			 * Don't hide default info on drawer when a probe is needed for extended info. (#36)
+			v1.12.2-1.1.0
+
+			 * Port Lycanite's Mobs
+			v1.12-1.0.0
+
+			 * Added OpenComputers, Advanced Generators support
+			 * Updated and extended IC? support
+			 * Refactoring, renaming, cleanup
+			 * Smeltery widget for the Tinker Tank
+			v1.12-0.15.1
+
+			 * Merge pull request #35 from codewarrior0/patch-1
+			Fix locked+empty drawers losing their item reservations - Fix locked+empty drawers losing their item reservations
+
+			Changing the stack size of the item prototype to zero causes it to become empty, making the drawer think it is no longer locked to an item. - Fixed some deprecations - Ported TiCo and Chisel support - Steve's Carts 2 support
+
+			v1.12-0.15.0
+
+			 * 1.12 port
+
+	Thaumic Energistics (went from (AE2-RV6) Thaumic Energistics 2.2.1 to (AE2-RV6) Thaumic Energistics 2.2.3):
+		(AE2-RV6) Thaumic Energistics 2.2.2:
+			Built for
+
+			- Forge: 14.23.5.2836
+			- Applied Energistics: RV6-Stable-6
+			- Thaumcraft: 6.1.BETA26
+
+			- Compress JEI Packet (#368)
+			- Fixed being able to autocraft any item
+			- Fixed Autocraft Autostart bug (#373)
+			- Fixed firing crafting events (#369)
+			- Fixed crafting non-1 stacks (#375)
+
+	Thaumic Grid (went from ThaumicGrid-1.0.11 (TC BETA 23 || RC 1.6.8) to ThaumicGrid-1.0.11 (TC BETA 26 || RC 1.6.9)):
+		ThaumicGrid-1.0.11 (TC BETA 26 || RC 1.6.9):
+			Fix bug with Craft Tweaker.
+
+	Thaumic JEI (went from ThaumicJEI-1.12.2-1.5.5-23.jar to ThaumicJEI-1.12.2-1.6.0-27.jar):
+		1.6.0:
+			* JEI recipes that have missing research will have an icon displaying its missing research, closes #54 (Buuz135)
+			* Fixed itemstacks being empty, closes #50 closes #53 (Buuz135)
+			* Fixed aspect thread check restarting when jei loads again, closes #55 (Buuz135)
+		1.5.8:
+			* Updated most of JEI deprecated methods (Buuz135)
+			* Fixed Crucible recipes not showing it's catalyst, closes #49 (Buuz135)
+			* Updated to a newer JEI (Buuz135)
+		1.5.7:
+			* Update gradle.properties (Buuz135)
+			* Log and ignore JSON syntax errors in aspect cache file (David Vierra)
+		1.5.6:
+			* Increased version (Buuz135)
+			* Fixed catalyst checking for crucible recipes, closes #41 (Buuz135)
+			* Vis crystals are now shown in the recipe info for the salis mundus, closes #44 (Buuz135)
+			* Fix crash during register with EnderIO 5.0.43 (Michael Ziminsky (Z))
+
+	Tinker's JEI (went from tinkersjei-1.0.jar to tinkersjei-1.2.jar):
+		tinkersjei-1.2.jar:
+			No changelog provided.
+		tinkersjei-1.1.jar:
+			Sorry for like completely abandoning this mod for a year. I know it's not an important mod at all, but I probably would be annoyed anyways if it would look like it did and the author would not update it.
+
+			But... I did now. This version contains:
+
+			 - An interface not looking awful with the newest JEI version
+			 - No text overflow anymore
+
+	Tinkers Construct (went from TConstruct-1.12.2-2.12.0.115.jar to TConstruct-1.12.2-2.12.0.157.jar):
+		TConstruct-1.12.2-2.12.0.157.jar:
+			Crash Hotfix for 2.12.0.156
+		TConstruct-1.12.2-2.12.0.156.jar:
+			More vanilla tools can be molten down in the smeltery (again)
+
+			 * Expand automatically detected melting recipes
+			 * Slight timing tweaks to the Faucet when activated by redstone
+			 * Use oredict gravel in recipes (especially grout)
+			 * Call IMCs later, to improve mod interoperability
+			 * Add a registry for head drops, allowing other mods to integrate their own heads with TiC (Beheading)
+			 * Language Updates
+		TConstruct-1.12.2-2.12.0.135.jar:
+			Requires Mantle 1.3.3.49
+
+			 * Add config option to show temperatures as celsius in the GUI
+			 * Fix crafting station showing inventories that aren't accessible to the player (Locked chests, strongboxes,...)
+			 * Fix crafting station recipe handling in multiplayer (results not showing up and more)
+			 * Wooden rail with trapdoor correctly uses all slots of the minecart with chest instead of only the first
+			 * Tinkers projectiles now correctly integrate with the ProjectileImpact Event
+			 * Some performance tweaks and optimizations under the hood
+			 * Improvements to several translations
+		TConstruct-1.12.2-2.12.0.123.jar:
+			Second test build for sync bug
+		TConstruct-1.12.2-2.12.0.120.jar:
+			Test build for sync bug
+
+	Waystones (went from Waystones_1.12.2-4.0.67.jar to Waystones_1.12.2-4.0.72.jar):
+		Waystones_1.12.2-4.0.72.jar:
+			Fixed "Warp Stone Costs XP" and "Short Travel is Free" option not being synced to clients, causing incorrect XP cost display on clients
+
+			Added "Short Travel is Free" option, enabled by default
+
+			- Currently, if XP cost is enabled, the first 500 blocks (by default, see distance-per-level option) will not cost any experience.
+
+			- By disabling the option, the XP cost is shifted, so the first 500 blocks already cost one level, then the next 500 blocks another, etc.
+
+			Fixed bound scrolls binding a whole stack of items instead of just one
+
+			Fixed boudn scrolls not working when the player has not activated the waystone they're bound to (by Laike-Endaril)
+
+			Added Korean Translation (by cs8minty)
+
+			Added Dutch Translation (by Skydragonsz)
+		Waystones_1.12.2-4.0.71.jar:
+			Added "Short Travel is Free" option, enabled by default
+
+			- Currently, if XP cost is enabled, the first 500 blocks (by default, see distance-per-level option) will not cost any experience.
+
+			- By disabling the option, the XP cost is shifted, so the first 500 blocks already cost one level, then the next 500 blocks another, etc.
+
+			Fixed bound scrolls binding a whole stack of items instead of just one
+
+			Fixed boudn scrolls not working when the player has not activated the waystone they're bound to (by Laike-Endaril)
+
+			Added Korean Translation (by cs8minty)
+
+			Added Dutch Translation (by Skydragonsz)
+
+	Wings (went from Wings 1.1.3 for Minecraft 1.12.2 to Wings 1.1.5 for Minecraft 1.12.2):
+		Wings 1.1.5 for Minecraft 1.12.2:
+			Add wear obstruction configuration (Fix [#28](https://github.com/pau101/Wings/issues/28))
+		Wings 1.1.4 for Minecraft 1.12.2:
+			Fixed broken ore config ([#27](https://github.com/pau101/Wings/issues/27))
+
+	Wireless Crafting Terminal (went from WirelessCraftingTerminal-1.12.2-3.11.88.jar to WirelessCraftingTerminal-1.12.2-3.12.93.jar):
+		WirelessCraftingTerminal-1.12.2-3.12.93.jar:
+			Pure crystals take priority in JEI
+
+			Magnet bug fixed
+
+			Demagnetize support added
+
+			Support for shit-drag-clicking items (like MouseTweaks does)
+
+			Holding [Alt] will now show craftable items even if terminal is set to a different mode.
+
+	Wizardry Mod (went from wizardry-0.9.9.jar to wizardry-0.10.8.jar):
+		wizardry-0.10.8.jar:
+			 * WIP depressed fairy items and mobilization
+			 * Fairies save their colors properly now
+			 * New cape textures
+			 * New sounds added (will be used later)
+			 * Disarm spell is now Extract spell and zuccs your enemies' inventories dry
+			 * Fix burnout (hasn't been being added for a while now)
+			 * Cape no longer reduces burnout
+			 * Shifting now lets you descend blocks while phasing
+			 * Leech buffed (might get nerfed later)
+			 * Fix desyncing of blocks with Break spell (pau101)
+			 * Burnout drains twice as fast as mana gen speed (might be changed later)
+		wizardry-0.10.7.jar:
+			 * WIP unicorn AI
+			 * Improved fairy AI
+			 * Sped up spirit wight speed + buffed them
+			 * WIP fairy jarring
+			 * Fix crash with clients when logging on
+			 * Redo mana network logic
+			 * Mana battery structure has been changed and regenerates mana now
+			 * Changed Disarm to Extract and now pulls items from chests as well
+			 * Fixed bug where disarmed items are instantly picked up
+			 * Made vanish more reliable and takes advantage of vanilla invisibility as well
+			 * Fix crash with pearl UI
+		wizardry-0.10.6.jar:
+			 * Fixed crashes on servers
+			 * Removed wizardry reset command
+			 * Fix crash for render visualizations
+			 * Fixed crash with empty syringes
+			 * Reduced zoom lag effect
+			 * Tiny telekinesis buff
+		wizardry-0.10.5.jar:
+			 * Better structure visualization
+			 * Overhaul vanish spell. It actually works now + no ai targetting
+			 * Overhaul zone shape. It handles things better now + is affected by potency
+			 * Some effects now respond better to zones (like timeslow/place/break/frost)
+			 * Buff base break spell
+			 * Block selection now works properly for place and substitution spells
+			 * Break spell no longer desyncs
+			 * Fixed rendering issue with lightning
+			 * Move mana pools to biome decoration event
+			 * Removed event modules from the spell system
+			 * Modules no longer have a "base" and "min". They just have min now.
+			 * SERIOUSLY reduce syringe cooldown time. make syringes fill mana completely
+		wizardry-0.10.3.jar:
+			 * Renamed pearl holder to orb holder
+			 * Add localization for levitation orbs
+			 * New bouncy block effect & entity bouncy effect
+			 * Added spell visualizations for every shape
+			 * Fix light spell's rendering (crashed on servers)
+			 * Fix error with bouncy blocks
+			 * Fix orb coloring when their fill reaches 0
+		wizardry-0.10.2.jar:
+			0.10.2
+
+			 * Added new recipes
+			 * Fixed invalid recipes
+			 * Changed recipes to use oredict if possible
+			0.10.1
+
+			 * Better fairy jar rendering
+			 * Fixed some sounds
+			 * Fixed worktable model in guis
+			 * Fixed modifiers not working at all and being calculated completely wrong
+			 * Add fatigue to time slow for a more punchy slowness effect
+			 * Fixed lightning spell and fix it's sounds
+			 * Fixed jars. They now exist properly
+			 * Pearl swap ui completely redone. Now actually works
+			 * Fixed light spell crashing
+			 * Fixed world lighting issue when accessing the worktable
+			 * Fixed a bug where lingering spells casted from lingering spells couldn't coexist
+			 * Fixed bug where lingering spells of the same type couldn't co-exist (yes, this is different)
+			 * Fixed spells not working on servers
+			 * Fixed vulnerability with spell book syncing
+			 * Redid /wizardry command
+			 * Added levitation orbs for funsies
+			 * Fixed a crash with IC2
+			 * Fixed a freeze from the phase spell
+			 * Made cosmetics (like capes) downloadable so they're version agnostic
+		wizardry-0.10.0.jar:
+			0.10.0
+			Fixed unicorns not spawning
+			Fixed staff losing spell data when not removing pearl
+			Fixed Sonic Scream crashing servers
+			Fixed /wizardry tpunderworld
+			Fixed Illumination sometimes replacing blocks
+			Underworld now generates based on world seed
+			Fixed Wisdom Wood Sapling not growing
+			Initial work on Torikki (extremely WIP)
+			Mana and Nacre now no longer disable swimming
+			Fixed not being able to go to the underworld while in creative or while not taking fall damage / having fly
+			Added mana pool dim blacklist/whitelist toggle config
+			Makes pearl holder only hold one pearl at a time and not a stack
+			Fix null deserialization error
+			Added pearl belt to hold multiple pearls (yes you can actually stop bugging us about it now)
+			Fix Break spell Enchantment crash
+			Fix teleport sounds for the substitute spell
+
+	Xaero's Minimap (went from v1.16.2 for Minecraft 1.12.2 | 1.12.1 | 1.12 to v1.17.4 for Minecraft 1.12.2 | 1.12.1 | 1.12):
+		v1.17.4 for Minecraft 1.12.2 | 1.12.1 | 1.12:
+			* Fixed incompatibility with Divine RPG and potentially other mods that add dimensions. Although it's very unlikely, this fix can, in theory, also "break" automatic sub-world detection for some modded dimensions that previously worked fine but you can easily fix it via the "Options" button in the waypoints menu. The "Make Sub-world Auto" option is what you're looking for.
+			* Improved the fix for the file path case sensitivity issue. Newly visited dimensions will now also correctly detect the existing world/server id with the different letter cases.
+		v1.17.3 for Minecraft 1.12.2 | 1.12.1 | 1.12:
+			* Compatibility with Xaero's World Map 1.4+.
+		v1.17.2 for Minecraft 1.12.2 | 1.12.1 | 1.12:
+			* Fixed compatibility with BetterPortals mod or similar mods that keep multiple worlds loaded at once on client side. A similar fix is coming to Xaero's World Map.
+			* Improved Greek translation. Huge thanks to VasilisGR!
+		v1.17.1 for Minecraft 1.12.2 | 1.12.1 | 1.12:
+			+ Added a new keybinding for toggling whether all waypoint sets for the current world are rendered or just the currently selected one.
+			* Fixed waypoints saving issues caused by non case-sensitive path handling on some OS including Windows. If your OS uses case-sensitive paths (for example Linux) and you have multiple IDs with the same name but different character cases (left from deleted worlds), then this fix might change which world ID is considered "auto". You can easily solve this using the "Options" menu in the waypoints screen.
+		v1.17 for Minecraft 1.12.2 | 1.12.1 | 1.12:
+			+ Added scrolling to dropdown menus when they don't fit in the screen. For example, world/server or sub-world lists.
+
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.0.36.jar to p455w0rdslib-1.12.2-2.2.156.jar):
+		p455w0rdslib-1.12.2-2.2.156.jar:
+			Fixed tons of stuff:
+
+			removed the block implementation of the shader
+
+			vanilla item effects are off by default
+
+			fixed CME bug and blockstate getCapability bug
+		p455w0rdslib-1.12.2-2.2.151.jar:
+			Fixed rare bug where shaders are enabled and available, but programs are unable to to be created
+		p455w0rdslib-1.12.2-2.2.150.jar:
+			Fix conflict with JEIDs/Mixins/VanillaFix
+		p455w0rdslib-1.12.2-2.2.134.jar:
+			Hotfix #2
+		p455w0rdslib-1.12.2-2.2.133.jar:
+			Fix coremod crash
+		p455w0rdslib-1.12.2-2.2.132.jar:
+			Lots of refactors
+
+			Implemented custom TEISR rendering handler
+
+			Implemented experimental colored lighting shader
+
+			Moved Mods enum from indivdual mods into pwlib
+
+			Removed most of the reflection code
+		p455w0rdslib-1.12.2-2.1.44.jar:
+			Reverted all recent changes except for TEISR rendering
+
+Removed 3 files:
+	- /dank/null
+	- Enderman Evolution
+	- JourneyMap
+
+* Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.15)

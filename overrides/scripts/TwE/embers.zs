@@ -4,10 +4,11 @@ import crafttweaker.liquid.ILiquidStack;
 
 // SOURCE: https://gist.github.com/terrapin47/16fb230d5dd73aec321fbe046b5d573c
 
+//====== Lavawood ======
 // Make lavawood with the stamper
 mods.embers.Stamper.add(<tconstruct:firewood>, <liquid:lava> * 250, <embers:stamp_flat>, <ore:plankWood>);
 
-// DUST COMPAT
+//====== Dust Compat ======
 
 val dustLiquids as ILiquidStack[IOreDictEntry] = {
 
@@ -31,7 +32,7 @@ for dust, liquid in dustLiquids {
 }
 
 
-// ORE COMPAT
+//====== Ore Compat ======
 
 val oreLiquids as ILiquidStack[IOreDictEntry] = {
 
@@ -44,7 +45,7 @@ for ore, liquid in oreLiquids {
     mods.embers.Melter.add(liquid, ore);
 }
 
-// NUGGET COMPAT
+//====== Nugget Compat ======
 
 val nuggetLiquids as ILiquidStack[IItemStack] = {
 
@@ -69,7 +70,7 @@ for nugget, liquid in nuggetLiquids {
 }
 
 
-// INGOT COMPAT
+//====== Ingot Compat ======
 
 val ingotLiquids as ILiquidStack[IItemStack] = {
 
@@ -94,7 +95,9 @@ for ingot, liquid in ingotLiquids {
     mods.embers.Stamper.add(ingot, liquid, <embers:stamp_bar>);
 }
 
+//====== Emerald and Tinkers ======
 // Special stuff
+
 mods.embers.Melter.add(<liquid:lava> * 25, <minecraft:netherrack>);
 mods.embers.Melter.add(<liquid:emerald> * 666, <ore:gemEmerald>);
 mods.embers.Stamper.add(<minecraft:emerald>, <liquid:emerald> * 666, <emberstic:stamp_emerald>);
@@ -106,7 +109,7 @@ mods.embers.Melter.add(<liquid:purpleslime> * 288, <tconstruct:edible:2>);
 mods.embers.Stamper.add(<tconstruct:edible:2>, <liquid:purpleslime> * 288, <embers:stamp_flat>);
 
 
-// BLOCK COMPAT
+//====== Block Compat ======
 
 val blockLiquids as ILiquidStack[IItemStack] = {
 
@@ -147,14 +150,16 @@ for block, liquid in blockLiquids {
 
 # ALLOY COMPAT
 
-// TCONSTRUCT
+//====== TConstruct ======
+
 mods.embers.Mixer.add(<liquid:alubrass> * 8, [<liquid:copper> * 2, <liquid:aluminum> * 6]);
 mods.embers.Mixer.add(<liquid:knightslime> * 4, [<liquid:iron> * 4, <liquid:purpleslime> * 8, <liquid:stone> * 8]);
 mods.embers.Mixer.add(<liquid:manyullyn> * 4, [<liquid:cobalt> * 4, <liquid:ardite> * 4]);
 
 
 
-// THAUMCRAFT
+//====== Thaumcraft ======
+
 mods.embers.Melter.add(<liquid:brass> * 144, <ore:plateBrass>.firstItem);
 mods.embers.Melter.add(<liquid:thaumium> * 144, <ore:plateThaumium>.firstItem);
 mods.embers.Melter.add(<liquid:voidmetal> * 144, <ore:plateVoid>.firstItem);
